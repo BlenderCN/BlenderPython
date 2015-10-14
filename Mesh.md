@@ -32,11 +32,11 @@ mesh = bpy.data.meshes.new("Base_Data")
 mesh.from_pydata(Verts, Edges, [])
 mesh.update()
 
-object = bpy.data.objects.new("Base_Object", mesh)
+obj = bpy.data.objects.new("Base_Object", mesh)
 
 scene = bpy.context.scene
-scene.objects.link(object)
-object.select = True
+scene.objects.link(obj)
+obj.select = True
 ```
 
 This snippet   

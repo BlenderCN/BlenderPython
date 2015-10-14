@@ -1,6 +1,7 @@
 [main](https://github.com/zeffii/BlenderPythonRecipes/wiki)  
 ______
 [Mesh](https://github.com/zeffii/BlenderPythonRecipes/wiki/Mesh)  
+  - [vertex colors](http://www)  
 [Bmesh](https://github.com/zeffii/BlenderPythonRecipes/wiki/BMesh)  
 [Curves (2d, 3d)](https://github.com/zeffii/BlenderPythonRecipes/wiki/Curves)  
 [Text](http://www)  

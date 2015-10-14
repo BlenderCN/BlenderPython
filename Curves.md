@@ -19,7 +19,8 @@ def MakeFilledPolyLine(objname, curvename, cLists):
     for cList in cLists:
         polyline = curvedata.splines.new('POLY')  
         polyline.points.add(len(cList)-1)  
-        for num in range(len(cList)):  
+        for num in range(len(cList)):
+            # --------------------- = x            , y            , z, w   
             polyline.points[num].co = cList[num][0], cList[num][1], 0, w
 
         polyline.order_u = len(polyline.points)-1

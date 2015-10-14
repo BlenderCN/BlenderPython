@@ -107,7 +107,7 @@ This should make sense, and the way to make Triangles is to simply pass in sub-l
 
 ## sequentially adding vertices/edges/faces
 
-In some scenarios you might want to add geometry to existing geometry. You can use `Bmesh` for this or just the regular `Mesh` structure.
+In some scenarios you might want to add geometry to existing geometry, use `[BMesh](http://www)` for this.
 
 
 ## Not an empty Mesh?

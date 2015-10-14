@@ -10,7 +10,7 @@ Both methods have strengths and weaknesses, picking which to use depends largely
 ### from_pydata
 ______
 
-Date: Oktober 2015
+Date: October 2015
 
 This method expects the `Mesh` object to be empty (more about that below). 
 

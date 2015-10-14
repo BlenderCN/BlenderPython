@@ -106,13 +106,11 @@ This should make sense, and the way to make Triangles is to simply pass in sub-l
 
 
 ## sequentially adding vertices/edges/faces
-______
 
 In some scenarios you might want to add geometry to existing geometry. You can use `Bmesh` for this or just the regular `Mesh` structure.
 
 
 ## Not an empty Mesh?
-______
 
 You will need to get rid of all geometry in the Mesh before you can use `.from_pydata` on it. This is one way to do it without using `bpy.ops`. Effectively using `Bmesh` to overwrite the `Mesh` data.
 

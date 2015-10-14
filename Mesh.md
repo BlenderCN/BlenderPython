@@ -8,6 +8,7 @@ There are two ways to create `Mesh` data.
 Both methods have strengths and weaknesses, picking which to use depends largely on what you're doing.
 
 ### from_pydata
+______
 
 Date: Oktober 2015
 
@@ -16,7 +17,7 @@ This method expects the `Mesh` object to be empty (more about that below).
 
 
 ### sequentially adding vertices/edges/faces
-
+______
 
 
 

@@ -1,4 +1,4 @@
-Blender has two main type of Curve types. 2D and 3D - and both have a variety of spline types. Maybe this doesn't mean much to you if you haven't used Blender's Curves much, but it will be apparent after a bit of experimentation.
+Blender has two main type of Curve types. 2D and 3D - and both have a variety of Spline types. Maybe this doesn't mean much to you if you haven't used Blender's Curves much, but it will be apparent after a bit of experimentation.
 
 ### 2D
 

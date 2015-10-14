@@ -28,16 +28,30 @@ coord4 = (1.0, 1.0, 0.0)
 Verts = [coord1, coord2, coord3, coord4]
 Edges = [[0,1],[1,2],[2,3],[3,0]]
 
-profile_mesh = bpy.data.meshes.new("Base_Profile_Data")
-profile_mesh.from_pydata(Verts, Edges, [])
-profile_mesh.update()
+mesh = bpy.data.meshes.new("Base_Data")
+mesh.from_pydata(Verts, Edges, [])
+mesh.update()
 
-profile_object = bpy.data.objects.new("Base_Profile", profile_mesh)
+object = bpy.data.objects.new("Base_Object", mesh)
 
 scene = bpy.context.scene
-scene.objects.link(profile_object)
-profile_object.select = True
+scene.objects.link(object)
+object.select = True
 ```
+
+This snippet   
+- adds a new empty mesh called 'Base_Data' to the `bpy.data` collection.
+- pushes `Verts, Edges, and an empty list` onto the new empty Mesh
+    - The empty list `[]` is because `from_pydata` expects 3 arguments, none are optional
+    - You can choose to pass just verts, or just verts+edges or just verts+faces like:
+
+         mesh.from_pydata(Verts, [], [])
+         mesh.from_pydata(Verts, Edges, [])
+         mesh.from_pydata(Verts, [], Faces)
+    
+    - In the event you want to add some faces and some edges you can of course do
+         mesh.from_pydata(Verts, Edges, Faces)
+        
 
 
 

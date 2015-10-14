@@ -6,7 +6,8 @@ Blender comes with a great set of templates for BMesh, I won't reproduce them he
 
 ### Snippet 1 (simple sequential geometry additions)
 
-If the Object is in Object mode.
+This example works if the Object is in _Object Mode_.
+
 ```python
 import bpy
 import bmesh

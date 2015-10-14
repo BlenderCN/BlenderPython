@@ -45,11 +45,11 @@ This snippet
     - The empty list `[]` is because `from_pydata` expects 3 arguments, none are optional
     - You can choose to pass just _verts_, or just _verts + edges_ or just _verts + faces_ like:  
 
-    ```python
-    mesh.from_pydata(Verts, [], [])
-    mesh.from_pydata(Verts, Edges, [])
-    mesh.from_pydata(Verts, [], Faces)
-    ```
+        ```python
+        mesh.from_pydata(Verts, [], [])
+        mesh.from_pydata(Verts, Edges, [])
+        mesh.from_pydata(Verts, [], Faces)
+        ```
     
     - In the event you want to add _some faces_ and _some edges_ you can of course do
           `mesh.from_pydata(Verts, Edges, Faces)`

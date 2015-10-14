@@ -3,9 +3,9 @@ _curated and opinionated snippets for bpy_
 
 Scripting examples are listed in the section to the right.
 
-Why Recipes?   
+**Why Recipes?**   
 Because this may be the most convenient way to collect snippets and allow people to contribute updates and fixes.
 
-Who?   
+**Who?**   
 The snippets assume some familiarity with Python, some more than others. If you are pretty new to Python you'll probably pick up a lot of techniques by experimenting with the examples and breaking / fixing them.
 

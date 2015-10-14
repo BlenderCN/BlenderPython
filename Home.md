@@ -11,7 +11,8 @@ Scripting examples cover:
 - Custom Nodes
 - Operators (and callbacks)
 - bgl / blf
-- import / export
+- import / export  
+- Add-ons  
 
 Why? Because this may be the most convenient way to collect snippets and allow people to contribute updates and fixes.
 

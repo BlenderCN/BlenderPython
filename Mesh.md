@@ -59,8 +59,50 @@ This snippet
     
     - In the event you want to add _some faces_ and _some edges_ you can of course do
           `mesh.from_pydata(Verts, Edges, Faces)`
-        
 
+### snippet 2 (creating: Verts and Quad Faces)
+______
+
+Date: October 2015
+
+This method expects the `Mesh` object to be empty (more about that below). 
+```python
+import bpy
+
+verts = [
+    (1.0, 1.0, -1.0),
+    (1.0, -1.0, -1.0),
+    (-1.0, -1.0, -1.0),
+    (-1.0, 1.0, -1.0),
+    (1.0, 1.0, 1.0),
+    (1.0, -1.0, 1.0),
+    (-1.0, -1.0, 1.0),
+    (-1.0, 1.0, 1.0)
+]
+
+faces = [
+    (0, 1, 2, 3),
+    (4, 7, 6, 5),
+    (0, 4, 5, 1),
+    (1, 5, 6, 2),
+    (2, 6, 7, 3),
+    (4, 0, 3, 7)
+]
+
+mesh = bpy.data.meshes.new("cube_mesh_data")
+mesh.from_pydata(verts, [], faces)
+mesh.update()
+
+cube_object = bpy.data.objects.new("Cube_Object", mesh)
+
+scene = bpy.context.scene  
+scene.objects.link(cube_object)  
+cube_object.select = True  
+```        
+
+This should make sense, and the way to make Triangles is to simply pass in sub-lists that index 3 vertices instead of 4. 
+
+> You are permitted to mix Triangles and Quads in the Faces list.
 
 
 ## sequentially adding vertices/edges/faces

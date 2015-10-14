@@ -1,18 +1,11 @@
 Welcome to the Blender Python Recipes wiki!  
 _curated and opinionated snippets for bpy_
 
-Scripting examples cover: 
-- Mesh
-- BMesh
-- Curves (2d, 3d)
-- Text
-- Metaballs
-- Nodes
-- Custom Nodes
-- Operators (and callbacks)
-- bgl / blf
-- import / export  
-- Add-ons  
+Scripting examples are listed in the section to the right.
 
-Why? Because this may be the most convenient way to collect snippets and allow people to contribute updates and fixes.
+Why Recipes?   
+Because this may be the most convenient way to collect snippets and allow people to contribute updates and fixes.
+
+Who?   
+The snippets assume some familiarity with Python, some more than others. If you are pretty new to Python you'll probably pick up a lot of techniques by experimenting with the examples and breaking / fixing them.
 

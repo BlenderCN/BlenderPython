@@ -43,14 +43,16 @@ This snippet
 - adds a new empty mesh called 'Base_Data' to the `bpy.data` collection.
 - pushes `Verts, Edges, and an empty list` onto the new empty Mesh
     - The empty list `[]` is because `from_pydata` expects 3 arguments, none are optional
-    - You can choose to pass just verts, or just verts+edges or just verts+faces like:
+    - You can choose to pass just verts, or just verts+edges or just verts+faces like:  
 
-         mesh.from_pydata(Verts, [], [])
-         mesh.from_pydata(Verts, Edges, [])
-         mesh.from_pydata(Verts, [], Faces)
+    ```python
+    mesh.from_pydata(Verts, [], [])
+    mesh.from_pydata(Verts, Edges, [])
+    mesh.from_pydata(Verts, [], Faces)
+    ```
     
     - In the event you want to add some faces and some edges you can of course do
-         mesh.from_pydata(Verts, Edges, Faces)
+          mesh.from_pydata(Verts, Edges, Faces)
         
 
 

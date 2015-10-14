@@ -112,4 +112,19 @@ ______
 
 ## Not an empty Mesh?
 
-You will need to get rid of all geometry in the Mesh before you can use `.from_pydata` on it.
+You will need to get rid of all geometry in the Mesh before you can use `.from_pydata` on it. This is one way to do it without using `bpy.ops`. Effectively using `Bmesh` to overwrite the `Mesh` data.
+
+```python
+import bpy
+import bmesh
+
+p = bpy.data.objects['Obj2']
+
+def clear_mesh(mesh):
+    bm = bmesh.new()
+    bm.to_mesh(mesh)
+    bm.free()
+
+clear_mesh(p.data)
+p.data.update()
+```

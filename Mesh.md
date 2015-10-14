@@ -7,7 +7,9 @@ There are two ways to create `Mesh` data.
 
 Both methods have strengths and weaknesses, picking which to use depends largely on what you're doing.
 
-### from_pydata
+## from_pydata
+
+### snippet 1
 ______
 
 Date: October 2015

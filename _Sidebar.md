@@ -1,6 +1,6 @@
 [main](https://github.com/zeffii/BlenderPythonRecipes/wiki)  
 ______
-[Mesh](http://www)  
+[Mesh](https://github.com/zeffii/BlenderPythonRecipes/wiki/Mesh)  
 [Curves (2d, 3d)](http://www)  
 [Text](http://www)  
 [Metaballs](http://www)  

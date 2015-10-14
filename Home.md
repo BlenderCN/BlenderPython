@@ -1,4 +1,4 @@
-Welcome to the Blender Python Recipes wiki!
+Welcome to the Blender Python Recipes wiki!  
 _curated and opinionated snippets for bpy_
 
 Scripting examples cover: 

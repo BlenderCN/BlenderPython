@@ -59,11 +59,11 @@ This snippet
 
 
 
-### sequentially adding vertices/edges/faces
+## sequentially adding vertices/edges/faces
 ______
 
 
 
-### Not an empty Mesh?
+## Not an empty Mesh?
 
-There's no neat way to remove all vert/edges/faces data from an existing mesh without
+You will need to get rid of all geometry in the Mesh before you can use `.from_pydata` on it.

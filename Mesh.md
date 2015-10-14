@@ -13,7 +13,7 @@ Both methods have strengths and weaknesses, picking which to use depends largely
 
 ## from_pydata
 
-### snippet 1 (creating)
+### snippet 1 (creating: Verts and Edges)
 ______
 
 Date: October 2015

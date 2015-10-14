@@ -1,10 +1,10 @@
 
-Blender comes with a great set of templates for BMesh.  
+Blender comes with a great set of templates for BMesh, I won't reproduce them here.  
 
   - _TextEditor -> Templates -> Python -> BMesh Simple_   
   - _TextEditor -> Templates -> Python -> BMesh Simple EditMode_  
 
-## Snippet 1 (simple sequential geometry additions)
+### Snippet 1 (simple sequential geometry additions)
 
 If the Object is in Object mode.
 ```python

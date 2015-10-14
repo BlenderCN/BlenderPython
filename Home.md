@@ -1,7 +1,4 @@
-Welcome to the BlenderPythonRecipes wiki!
-
-# Blender Python Recipes
-
+Welcome to the Blender Python Recipes wiki!
 _curated snippets for bpy_
 
 Scripting examples for:  
@@ -16,5 +13,5 @@ Scripting examples for:
 - bgl / blf
 - import / export
 
-See the wiki for a more elaborate set of categories, most on the above list have multiple examples.
+Why? Because this may be the most convenient way to collect snippets and allow people to contribute updates and fixes.
 

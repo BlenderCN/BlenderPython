@@ -3,7 +3,7 @@
 There are two ways to create `Mesh` data.  
 
 - One relies on first defining all vertices / edges / faces in lists and then sending them to a function called `.from_pydata()`.
-- The other grows the mesh in place by adding verts and indices sequentially.
+- The other grows the mesh in place by adding _vertex coordinates_ and _edge / face indices_ sequentially.
 
 Both methods have strengths and weaknesses, picking which to use depends largely on what you're doing.
 

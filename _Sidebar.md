@@ -2,7 +2,7 @@
 ______
 [Mesh](https://github.com/zeffii/BlenderPythonRecipes/wiki/Mesh)  
 [Bmesh](https://github.com/zeffii/BlenderPythonRecipes/wiki/BMesh)  
-[Curves (2d, 3d)](http://www)  
+[Curves (2d, 3d)](https://github.com/zeffii/BlenderPythonRecipes/wiki/Curves)  
 [Text](http://www)  
 [Metaballs](http://www)  
 [Nodes](http://www)  

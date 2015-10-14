@@ -36,3 +36,6 @@ vectors = [
 ]
 MakeFilledPolyLine("NameOfMyCurveObject", "NameOfMyCurve", vectors)
 ```
+
+makes this:  
+![image1](http://i.stack.imgur.com/TuxNP.png)

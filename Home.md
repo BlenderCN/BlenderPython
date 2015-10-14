@@ -1,12 +1,12 @@
 Welcome to the Blender Python Recipes wiki!
-_curated snippets for bpy_
+_curated and opinionated snippets for bpy_
 
-Scripting examples for:  
+Scripting examples cover: 
 - Mesh
+- BMesh
 - Curves (2d, 3d)
 - Text
 - Metaballs
-- Bmesh
 - Nodes
 - Custom Nodes
 - Operators (and callbacks)

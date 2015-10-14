@@ -12,8 +12,8 @@ import bpy
 import bmesh
 
 mesh = bpy.data.objects['object_name'].data
-bm = bmesh.new()   # create an empty BMesh
-bm.from_mesh(mesh)   # fill it in from a Mesh
+bm = bmesh.new()
+bm.from_mesh(mesh)
 
 # some aliases
 verts = bm.verts

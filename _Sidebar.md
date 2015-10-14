@@ -6,6 +6,8 @@ ______
 [Text](http://www)  
 [vertex colors](http://www)  
 [scripted keyframes](http://www)  
+[Event Handlers](http://www)  
+[Image Pixel manipulation](http://www)  
 [Metaballs](http://www)  
 [Nodes](http://www)  
 [Custom Nodes](http://www)  

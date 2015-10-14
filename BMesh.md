@@ -39,6 +39,7 @@ v1 = verts.new((0.0, 1.0, 1.0))
 v2 = verts.new((0.0, 0.0, 1.0))
 bm.edges.new((v1, v2))
 
-bm.to_mesh(me)
+bm.to_mesh(mesh)
 bm.free()
+mesh.update()
 ```

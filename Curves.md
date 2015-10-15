@@ -1,5 +1,7 @@
 Blender has two main type of Curve types. 2D and 3D - and both have a variety of Spline types. Maybe this doesn't mean much to you if you haven't used Blender's Curves much, but it will be apparent after a bit of experimentation.
 
+Available Spline types: `('POLY', 'BEZIER', 'BSPLINE', 'CARDINAL', 'NURBS')`
+
 ### 2D
 
 This snippet lets you create a 2d surface Curve. Think of this as a Filled Polyline. You can pass it any number of sublists and the function will deal with the sublists. If the sublists fall within the perimeter of the largest sublist then it will make holes. Try it.

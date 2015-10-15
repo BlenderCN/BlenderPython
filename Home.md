@@ -1,5 +1,6 @@
-Welcome to the Blender Python Recipes wiki!  (Work In Progress until this message goes)
+Welcome to the Blender Python Recipes wiki!  
 _curated and opinionated snippets for bpy_
+**(Work In Progress until this message goes)**
 
 Scripting examples are listed in the section to the right.
 

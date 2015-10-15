@@ -27,12 +27,12 @@ def MakeFilledPolyLine(objname, curvename, cLists):
 
         polyline.order_u = len(polyline.points)-1
         polyline.use_endpoint_u = True
-        polyline.use_cyclic_u = True
+        polyline.use_cyclic_u = True  # this closes each loop
 
 
 vectors = [
-    [[0,0], [10,0], [10,10], [0,10], [0,0]], 
-    [[1,1], [1,2], [2,2], [2,1], [1,1]]
+    [[0,0], [10,0], [10,10], [0,10]], 
+    [[1,1], [1,2], [2,2], [2,1]]
 ]
 MakeFilledPolyLine("NameOfMyCurveObject", "NameOfMyCurve", vectors)
 ```

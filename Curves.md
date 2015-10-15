@@ -40,7 +40,7 @@ MakeFilledPolyLine("NameOfMyCurveObject", "NameOfMyCurve", vectors)
 makes this:  
 ![image1](http://i.stack.imgur.com/TuxNP.png)
 
-### 3D
+### 3D (smooth path)
 
 ```python
 import bpy  

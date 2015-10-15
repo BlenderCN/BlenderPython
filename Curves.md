@@ -1,6 +1,6 @@
 Blender has two main type of Curve types. 2D and 3D - and both have a variety of Spline types. Maybe this doesn't mean much to you if you haven't used Blender's Curves much, but it will be apparent after a bit of experimentation.
 
-Available Spline types: `('POLY', 'BEZIER', 'BSPLINE', 'CARDINAL', 'NURBS')`. Each of these types expects it's coordinate information in a different way. 
+Available Spline types: `('POLY', 'BEZIER', 'BSPLINE', 'CARDINAL', 'NURBS')`. Each of these types expects its coordinate information in a different way. 
 
   - POLY:  Like a poly line, not smoothed, just a line between each coordinate.
   - NURBS: Smoothed lines between coordinates.

@@ -8,6 +8,8 @@ Available Spline types: `('POLY', 'BEZIER', 'BSPLINE', 'CARDINAL', 'NURBS')`. Ea
   - CARDINAL: ...
   - BSPLINE: ...
 
+Sometimes the distinction between 2D and 3D is arbitrary, sometimes you can switch the Curve type to either, it depends on what logically makes sense.
+
 ### 2D
 
 This snippet lets you create a 2d surface Curve. Think of this as a Filled Polyline. You can pass it any number of sublists and the function will deal with the sublists. If the sublists fall within the perimeter of the largest sublist then it will make holes. Try it.

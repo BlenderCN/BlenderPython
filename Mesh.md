@@ -142,4 +142,4 @@ often you can use something like [itertools](https://docs.python.org/3.4/library
 flat_list_of_verts = list(itertools.chain.from_iterable(verts))
 ```
 
-For each will always expect a flat list.
+`foreach_set` will always expect a flat list.

@@ -5,7 +5,7 @@ _curated and opinionated snippets for bpy_
 Scripting examples are listed in the section to the right.
 
 **Why Recipes?**   
-Because this may be the most convenient way to collect snippets and allow people to contribute updates and fixes. The `bpy` documentation is mostly auto-generated and tends to be (October 2015) rather sparse on details; that's fine for most confident python-heads, but people trying to learn python and `bpy` out can benefit more from seeing many short samples.
+Because this may be the most convenient way to collect snippets and allow people to contribute updates and fixes. The `bpy` documentation is mostly auto-generated and tends to be (October 2015) rather sparse on details; that's fine for most confident python-heads, but people trying to learn python and `bpy`  benefit more from seeing many short samples.
 
 **Who?**   
 The snippets assume some familiarity with Python, some more than others. If you are pretty new to Python you'll probably pick up a lot of techniques by experimenting with the examples and breaking / fixing them. The aim here isn't strictly to teach Python, but sometimes techniques are described or Python docs are referenced.

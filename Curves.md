@@ -91,6 +91,7 @@ def MakeCurveQuarter(objname, curvename, cList, origin=(0,0,0)):
 MakeCurveQuarter("NameOfMyCurveObject", "NameOfMyCurve", coordinates)  
 ```
 
+![img4](https://cloud.githubusercontent.com/assets/619340/10614751/41090bfe-775c-11e5-9e72-c33e580512dd.png)
 
 
 ### 3D (smooth path)

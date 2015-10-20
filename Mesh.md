@@ -137,4 +137,9 @@ mesh.vertices.foreach_set('co', flat_list_of_verts)
 mesh.update()
 ```
 
+often you can use something like [itertools](https://docs.python.org/3.4/library/itertools.html) to flatten a nested list of coordinates
+```python
+flat_list_of_verts = list(itertools.chain.from_iterable(verts))
+```
+
 For each will always expect a flat list.

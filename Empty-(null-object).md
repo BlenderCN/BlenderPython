@@ -26,3 +26,5 @@ empty = objects.new("empty_name", None)
 scene.objects.link(empty)
 scene.update()
 ```
+option 2 may seem like more code, but you can set the name on the same line as the creation and you
+get the reference at the same time.

@@ -11,7 +11,7 @@ option 1:
 bpy.ops.object.add(type='EMPTY', location=world_coord, rotation=(0, 0, 0))
 
 # the drawback is that if you need a reference to the object you have to get
-# it manually using active_object. (useful for setting a name..or other properties)
+# it using active_object. (useful for setting a name..or other properties)
 mt = bpy.context.active_object
 mt.name = 'empty_name'  
 mt.location = vert_coordinate

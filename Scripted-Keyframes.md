@@ -24,3 +24,5 @@ for i in range(1, num_frames+1):
     empty.rotation_euler[2] = gamma * i
     empty.keyframe_insert(data_path='rotation_euler', frame=i, index=-1) 
 ```
+
+>  See: [this page](https://github.com/zeffii/BlenderPythonRecipes/wiki/Empty-(null-object)) for more ways to create an Empty

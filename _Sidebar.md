@@ -1,6 +1,6 @@
 [main](https://github.com/zeffii/BlenderPythonRecipes/wiki)  
 ______
-[Empty - null object](https://github.com/zeffii/BlenderPythonRecipes/wiki/Empty-(null-object))
+[Empty - null object](https://github.com/zeffii/BlenderPythonRecipes/wiki/Empty-(null-object))  
 [Mesh](https://github.com/zeffii/BlenderPythonRecipes/wiki/Mesh)  
 [Bmesh](https://github.com/zeffii/BlenderPythonRecipes/wiki/BMesh)  
 [Curves (2d, 3d)](https://github.com/zeffii/BlenderPythonRecipes/wiki/Curves)  

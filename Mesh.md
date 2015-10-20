@@ -128,3 +128,13 @@ def clear_mesh(mesh):
 clear_mesh(p.data)
 p.data.update()
 ```
+
+### update using `foreach_set`
+
+```python
+flat_list_of_verts = [x1, y1, z1, x2, y2, z1, x3, y3, z3....xn, yn, zn]
+mesh.vertices.foreach_set('co', flat_list_of_verts)
+mesh.update()
+```
+
+For each will always expect a flat list.

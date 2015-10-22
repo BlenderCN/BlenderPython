@@ -1,7 +1,7 @@
 some assumptions about the whole thing:
 
 - square image
-- you use Meters of Blender Units. (Else the texture_dpi function changes a little)
+- you use Meters of Blender Units. (Else the `texture_dpi` function changes a little)
 - you pass the correct image name (or image of equivalent dimensions)
 - you have an active uvmap
 - you are in edit mode.

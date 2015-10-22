@@ -9,6 +9,7 @@ ______
 [scripted keyframes](http://www)  
 [Event Handlers](http://www)  
 [Image Pixel manipulation](http://www)  
+[Textures UV DPI](UV---DPI-(variable-or-homogeneous))
 [Metaballs](http://www)  
 [Nodes](http://www)  
 [Custom Nodes](http://www)  

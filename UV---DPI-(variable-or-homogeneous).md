@@ -1,8 +1,10 @@
 some assumptions about the whole thing:
 
-- assumes square image
-- assumes you have an active uvmap
-- assumes you are in edit mode.
+- square image
+- you use Meters of Blender Units. (Else the texture_dpi function changes a little)
+- you pass the correct image name (or image of equivalent dimensions)
+- you have an active uvmap
+- you are in edit mode.
 
 Insight can also be found at _TextEditor -> Templates -> Python -> Operator Mesh UV_
 

@@ -4,6 +4,7 @@ some assumptions about the whole thing:
 - assumes you have an active uvmap
 - assumes you are in edit mode.
 
+Insight can also be found at _TextEditor -> Templates -> Python -> Operator Mesh UV_
 
 ```python
 import math

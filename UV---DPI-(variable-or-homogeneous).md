@@ -1,7 +1,7 @@
 some assumptions about the whole thing:
 
 - assumes square image
-- assumees you have an active uvmap
+- assumes you have an active uvmap
 - assumes you are in edit mode.
 
 

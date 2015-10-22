@@ -65,3 +65,5 @@ def get_bm_from_edit_object(image_name):
 
 get_bm_from_edit_object('some_texture.png')
 ```
+
+on this line `break  # if homogeneous  , else comment it out.`  I've left the break statement to stop iteration and just use the first polygon. The assumption is that all your polygons have the same amount of area per pixel. Sometimes you might have textures and uvmaps that intentionally scale certain uv_islands to get more pixels in a smaller space, these islands can be calculated independently or simply by the index of one of the faces of the island.

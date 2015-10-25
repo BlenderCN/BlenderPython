@@ -1,5 +1,7 @@
 Blender comes with numpy built in. yep!
 
+### Mix 3 images
+
 ```python
 import math
 import numpy as np

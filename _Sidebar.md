@@ -4,6 +4,7 @@ ______
 [Mesh](Mesh)  
 [Bmesh](BMesh)  
 [Curves (2d, 3d)](Curves)  
+[Dupliverts (instancing](Dupliverts)
 [Text](http://www)  
 [vertex colors](http://www)  
 [scripted keyframes](http://www)  

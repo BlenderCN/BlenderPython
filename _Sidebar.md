@@ -18,7 +18,7 @@ Time and Motion
 
 Miscellaneous `bpy.data.*`  
 
-- [bpy.data.materials](bpy_data_materials)  
+- [bpy.data.materials (Nodes)](bpy_data_materials)  
 - [bpy.data.texts](bpy_data_texts)  
 - [bpy.data.images (Image Pixel manipulation)](Image_Pixels)  
 
@@ -26,7 +26,6 @@ Miscellaneous
 
 - [vertex colors](VertexColors)  
 - [Textures UV DPI](UV---DPI-(variable-or-homogeneous))  
-- [Nodes](Nodes)  
 - [Operators (and callbacks)](Operators)  
 - [bgl / blf](bgl_blf)  
 

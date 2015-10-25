@@ -16,11 +16,15 @@ Time and Motion
 - [Event Handlers](EventHandlers)  
 - [Drivers](Drivers)  
 
-Miscellaneous (deserve further sublisting)  
+Miscellaneous `bpy.data.*`  
 
 - [bpy.data.materials](bpy_data_materials)  
+- [bpy.data.texts](bpy_data_texts)  
+- [bpy.data.images (Image Pixel manipulation)](Image_Pixels)  
+
+Miscellaneous  
+
 - [vertex colors](VertexColors)  
-- [Image Pixel manipulation](Image_Pixels)  
 - [Textures UV DPI](UV---DPI-(variable-or-homogeneous))  
 - [Nodes](Nodes)  
 - [Custom Nodes](CustomNodes)  

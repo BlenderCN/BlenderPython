@@ -7,7 +7,7 @@ Objects : bpy.data.objects
 - [Bmesh](BMesh)  
 - [Curves (2d, 3d)](Curves)  
 - [Dupliverts (instancing)](Dupliverts)  
-- [Text](Text)  
+- [Text (Font Objects)](Text)  
 - [Metaballs](Metaballs)  
 
 Time and Motion 

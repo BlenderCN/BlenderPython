@@ -9,7 +9,7 @@ ______
 [vertex colors](http://www)  
 [scripted keyframes](http://www)  
 [Event Handlers](http://www)  
-[Image Pixel manipulation](http://www)  
+[Image Pixel manipulation](Image_Pixels)  
 [Textures UV DPI](UV---DPI-(variable-or-homogeneous))  
 [Metaballs](http://www)  
 [Nodes](http://www)  

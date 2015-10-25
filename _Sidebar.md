@@ -27,7 +27,6 @@ Miscellaneous
 - [vertex colors](VertexColors)  
 - [Textures UV DPI](UV---DPI-(variable-or-homogeneous))  
 - [Nodes](Nodes)  
-- [Custom Nodes](CustomNodes)  
 - [Operators (and callbacks)](Operators)  
 - [bgl / blf](bgl_blf)  
 
@@ -35,3 +34,4 @@ Add-ons
 
 - [import / export](IO)  
 - [Text Editor](TextEditor)  
+- [Custom Nodes](CustomNodes)  

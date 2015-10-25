@@ -2,4 +2,4 @@ disambiguation: If you're looking for `bpy.data.texts` _text datablocks_ go [her
 
 ### Text Objects / Font Objects
 
-Text Objects are of type `type == 'FONT'`, and closely related to the Curve Object type. This is another object type that has many parametric ways to modify it.
+Text Objects are of type `type == 'FONT'`, and closely related to the Curve Object type (`type == 'CURVE'`). This is another object type that has many parametric ways to modify it.

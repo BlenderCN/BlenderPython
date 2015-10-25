@@ -9,6 +9,7 @@ This is the long way, the scenic route. Using a python expression from a file.
 - select the driven property, and toggle the rightside panel
 - Make a script in the Text Editor with content similar to this.
 
+```python
 import math
 import bpy
 
@@ -23,5 +24,5 @@ bpy.app.driver_namespace['driver_func'] = driver_func
 
 # bpy.app.driver_namespace.clear()   <- don't! do this it will clear all convenience functions.
 # better clear the namespace entry by name.
-
+```
 ![theimage](https://cloud.githubusercontent.com/assets/619340/10715506/092e8798-7b19-11e5-9570-421515d8849f.png)

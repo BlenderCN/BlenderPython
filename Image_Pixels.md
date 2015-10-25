@@ -7,8 +7,7 @@ import bpy
 
 def np_array_from_image(img_name):
     img = bpy.data.images[img_name]
-    # width, height = img.size[:]
-    return np.array(img.pixels[:])  # .reshape([height, width, 4])
+    return np.array(img.pixels[:])
 
 pixelsA = np_array_from_image('A')
 pixelsB = np_array_from_image('B')

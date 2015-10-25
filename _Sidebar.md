@@ -30,5 +30,8 @@ Miscellaneous
 - [Custom Nodes](CustomNodes)  
 - [Operators (and callbacks)](Operators)  
 - [bgl / blf](bgl_blf)  
+
+Add-ons  
+
 - [import / export](IO)  
-- [add-ons](Add-ons)  
+- [Text Editor](TextEditor)  

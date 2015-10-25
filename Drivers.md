@@ -2,7 +2,7 @@ I don't know a whole lot about these, and [the docs](https://www.blender.org/man
 
 ### Driver from Python file
 
-This is the long way, the scenic route. Using a python expression from a file.
+This is the long way, the scenic route. Using a python expression from a file. Sometimes you'll have expressions that are a bit more complicated than what you can fit onto 1 line comfortably.
 
 - Rightclick the property in question, choose Add Single Driver
 - Open the Graph Editor, and switch to Drivers view

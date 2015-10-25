@@ -31,4 +31,4 @@ interim_1 = np.minimum(pixelsA, pixelsB)
 pixelsD = np.minimum(interim_1, pixelsC)
 ```
 
-[img2](http://i.stack.imgur.com/4Jf9H.png)
+![img2](http://i.stack.imgur.com/4Jf9H.png)

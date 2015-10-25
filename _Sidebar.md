@@ -1,21 +1,29 @@
 [main](https://github.com/zeffii/BlenderPythonRecipes/wiki)  
 ______
-[Empty - null object](Empty-(null-object))  
-[Mesh](Mesh)  
-[Bmesh](BMesh)  
-[Curves (2d, 3d)](Curves)  
-[Dupliverts (instancing)](Dupliverts)  
-[Text](Text)  
-[vertex colors](VertexColors)  
-[scripted keyframes](Keyframes)  
-[Event Handlers](EventHandlers)  
-[Image Pixel manipulation](Image_Pixels)  
-[Textures UV DPI](UV---DPI-(variable-or-homogeneous))  
-[Metaballs](Metaballs)  
-[Nodes](Nodes)  
-[Custom Nodes](CustomNodes)  
-[Drivers](Drivers)  
-[Operators (and callbacks)](Operators)  
-[bgl / blf](bgl_blf)  
-[import / export](IO)  
-[add-ons](Add-ons)  
+Objects   
+
+- [Empty - null object](Empty-(null-object))  
+- [Mesh](Mesh)  
+- [Bmesh](BMesh)  
+- [Curves (2d, 3d)](Curves)  
+- [Dupliverts (instancing)](Dupliverts)  
+- [Text](Text)  
+- [Metaballs](Metaballs)  
+
+Time and Motion 
+
+- [scripted keyframes](Keyframes)  
+- [Event Handlers](EventHandlers)  
+- [Drivers](Drivers)  
+
+Miscellaneous   
+
+- [vertex colors](VertexColors)  
+- [Image Pixel manipulation](Image_Pixels)  
+- [Textures UV DPI](UV---DPI-(variable-or-homogeneous))  
+- [Nodes](Nodes)  
+- [Custom Nodes](CustomNodes)  
+- [Operators (and callbacks)](Operators)  
+- [bgl / blf](bgl_blf)  
+- [import / export](IO)  
+- [add-ons](Add-ons)  

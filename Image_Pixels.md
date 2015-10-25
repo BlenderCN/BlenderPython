@@ -21,3 +21,10 @@ image_D.pixels = pixelsD.tolist()
 
 # then click in the UV editor / to update the view..to see the pixels of `D` updated
 ```
+
+### Add smallest of each array
+```python
+# add smallest element values
+interim_1 = np.minimum(pixelsA, pixelsB)
+pixelsD = np.minimum(interim_1, pixelsC)
+```

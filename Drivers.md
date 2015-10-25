@@ -22,7 +22,9 @@ def driver_func(current_frame):
 # add function to driver_namespace
 bpy.app.driver_namespace['driver_func'] = driver_func
 
-# bpy.app.driver_namespace.clear()   <- don't! do this it will clear all convenience functions.
-# better clear the namespace entry by name.
 ```
+If your driver has a python error, you can correct it and run the code again to overwrite 
+the namespace key 'driver_func`. 
+
+
 ![theimage](https://cloud.githubusercontent.com/assets/619340/10715506/092e8798-7b19-11e5-9570-421515d8849f.png)

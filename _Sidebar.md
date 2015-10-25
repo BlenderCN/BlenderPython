@@ -1,6 +1,6 @@
 [main](https://github.com/zeffii/BlenderPythonRecipes/wiki)  
 ______
-Objects   
+Objects : bpy.data.objects  
 
 - [Empty - null object](Empty-(null-object))  
 - [Mesh](Mesh)  
@@ -16,8 +16,9 @@ Time and Motion
 - [Event Handlers](EventHandlers)  
 - [Drivers](Drivers)  
 
-Miscellaneous   
+Miscellaneous (deserve further sublisting)  
 
+- [bpy.data.materials](bpy_data_materials)  
 - [vertex colors](VertexColors)  
 - [Image Pixel manipulation](Image_Pixels)  
 - [Textures UV DPI](UV---DPI-(variable-or-homogeneous))  

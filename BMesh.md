@@ -63,7 +63,7 @@ if you've ever wondered what it might look like:
 import bmesh
 
 
-def bmesh_from_pydata(verts=[], edges=[], faces=[]):
+def bmesh_from_pydata(verts=None, edges=None, faces=None):
     ''' verts is necessary, edges/faces are optional '''
 
     bm = bmesh.new()

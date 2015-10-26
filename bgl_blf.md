@@ -1,6 +1,6 @@
 October 2015  
   
-This topic is something people tend to gravitate towards once they've grasped the notions of Meshes:  vertices, normals, indices, Vectors and Matrices - and the trigonometry and Linear Algebra used to perform calculations / transformations on them. This page will assume you are at that stage.
+This topic is something people tend to gravitate towards once they've grasped the notions of Meshes:  vertices, normals, indices, Vectors and Matrices - and the trigonometry and Linear Algebra used to perform calculations / transformations on them. This page will assume you are at that stage. Blender comes with many convenience functions to get you started.
 
 Else there is [further reading](Further_Reading_LA) to accompany this if things aren't making sense.
 

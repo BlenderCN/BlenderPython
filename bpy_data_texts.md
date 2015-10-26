@@ -9,8 +9,7 @@ Text data-blocks are used for all kinds of things.  Storing
 - data (coordinates, data structures, relationships, etc.,)
 - Any string.
 
-### Creating a new text block with content
-____
+Creating a new text block with content is as simple as this:
 
 ```python
 some_str = "Hello\nMy name is\ngobbledigook"
@@ -18,12 +17,11 @@ f = bpy.data.texts.new('new_text.txt')
 f.from_string(some_str)
 ```
 
-## reading and writing `json` or `dict literal`
+### reading and writing `json` or `dict literal`
 
 Both methods below work only on dicts that can be stringified, so they can't contain Objects.
 
-### json 
-___
+**json** 
 
 A general Python solution to this involving JSON writing and reading. JSON can easily be constructed from a dictionary and written to `bpy.data.texts` as a string.
 
@@ -74,8 +72,8 @@ to read this back in at a later stage:
 ```
 
 
-### dict and ast.literal_eval
-___
+**dict and ast.literal_eval**  
+
 ```python
     import bpy
     import ast

@@ -92,3 +92,19 @@ def bmesh_from_pydata(verts=None, edges=None, faces=None):
     return bm
 
 ```
+
+### Snippet 4 : Bmesh primitives
+
+Bmesh has a number of primitive meshes just like `bpy.ops`, with the main difference being that you have to pass a receiver bmesh to fill with the geometry, and it doesn't create objects.
+
+
+```python
+import bmesh
+
+def create_icospehere(subdiv, d):
+    bm = bmesh.new()
+    bmesh.ops.create_icosphere(bm, subdivisions=subdiv, diameter=d)
+    v, e, p = pydata_from_bmesh(bm)
+    bm.free()
+    return v, e, p
+```

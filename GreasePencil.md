@@ -1,6 +1,6 @@
 resources which cover this:
-http://blender.stackexchange.com/questions/24694/query-grease-pencil-strokes-from-python
-http://blender.stackexchange.com/questions/36140/convert-curves-to-grease-pencil
+[query-grease-pencil-strokes-from-python](http://blender.stackexchange.com/questions/24694/query-grease-pencil-strokes-from-python)
+[convert-curves-to-grease-pencil](http://blender.stackexchange.com/questions/36140/convert-curves-to-grease-pencil)
 
 ### drawing trigonometry using Grease Pencil.
 

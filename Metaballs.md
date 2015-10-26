@@ -28,3 +28,5 @@ ele.co = (-0.726, 1.006, 0.559)
 ele.use_negative = True
 ele.radius = 0.82279
 ```
+
+![metaball_img1](https://cloud.githubusercontent.com/assets/619340/10737697/eb99a57c-7c13-11e5-8f81-bde3960f91e4.png)

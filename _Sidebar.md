@@ -34,7 +34,7 @@ Miscellaneous
 - [Textures UV DPI](UV---DPI-(variable-or-homogeneous))  
 - [Operators (and callbacks)](Operators):lock:  
 - [bgl / blf](bgl_blf):lock:  
-- [Grease Pencil](GreasePencil):lock:  
+- [Grease Pencil](GreasePencil):wrench:  
   
 Add-ons  
 

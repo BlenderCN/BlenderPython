@@ -23,9 +23,7 @@ Both methods below work only on dicts that can be stringified, so they can't con
 
 **json** 
 
-A general Python solution to this involving JSON writing and reading. JSON can easily be constructed from a dictionary and written to `bpy.data.texts` as a string.
-
-Imagine you have some dict of information, call it `my_dict`. To write that dict as a JSON to the .blend file you do:
+JSON can easily be constructed from a dictionary and written to `bpy.data.texts` as a string. Imagine you have some dict of information, call it `my_dict`. To write that dict as a JSON to the .blend file you do:
 
 ```python
     import bpy
@@ -70,7 +68,7 @@ to read this back in at a later stage:
     print(my_json['key1'])
 
 ```
-
+____
 
 **dict and ast.literal_eval**  
 

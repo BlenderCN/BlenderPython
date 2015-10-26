@@ -18,9 +18,9 @@ f = bpy.data.texts.new('new_text.txt')
 f.from_string(some_str)
 ```
 
-## Storing as json or dict literal
+## reading and writing `json` or `dict literal`
 
-Both methods below only work on dicts that can be stringified, so they can't contain Objects.
+Both methods below work only on dicts that can be stringified, so they can't contain Objects.
 
 ### json 
 ___

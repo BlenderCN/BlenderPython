@@ -6,8 +6,8 @@ Text data-blocks are used for all kinds of things.  Storing
 
 - notes  
 - scripts
-- data
-- Anything string you can write to a file can be written to a TextObject
+- data (coordinates, data structures, relationships, etc.,)
+- Any string.
 
 ### Creating a new text block with content
 

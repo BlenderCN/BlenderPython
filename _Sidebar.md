@@ -22,6 +22,12 @@ Miscellaneous `bpy.data.*`
 - [bpy.data.texts](bpy_data_texts)  
 - [bpy.data.images (Image Pixel manipulation)](Image_Pixels)  
 
+Order  
+  
+- [Grouping](Grouping)  
+- [Parenting](Parenting)  
+- [Layers](Layers)  
+  
 Miscellaneous  
 
 - [vertex colors](VertexColors)  

@@ -22,7 +22,7 @@ Miscellaneous `bpy.data.*`
 - [bpy.data.texts](bpy_data_texts)  
 - [bpy.data.images (Image Pixel manipulation)](Image_Pixels)  
 
-Order  
+Order / Organization  
   
 - [Grouping](Grouping)  
 - [Parenting](Parenting)  

@@ -12,32 +12,32 @@ Objects : bpy.data.objects
 
 Time and Motion 
 
-- [scripted keyframes](Keyframes)  
-- [Event Handlers](EventHandlers)  
+- [scripted keyframes](Keyframes):lock:  
+- [Event Handlers](EventHandlers):lock:  
 - [Drivers](Drivers)  
 
 Miscellaneous `bpy.data.*`  
 
-- [bpy.data.materials (Nodes)](bpy_data_materials)  
+- [bpy.data.materials (Nodes)](bpy_data_materials):lock:  
 - [bpy.data.texts](bpy_data_texts)  
 - [bpy.data.images (Image Pixel manipulation)](Image_Pixels)  
 
 Order / Organization  
   
-- [Grouping](Grouping)  
-- [Parenting](Parenting)  
-- [Layers](Layers)  
+- [Grouping](Grouping):lock:  
+- [Parenting](Parenting):lock:  
+- [Layers](Layers):lock:  
   
 Miscellaneous  
 
-- [vertex colors](VertexColors)  
+- [vertex colors](VertexColors):lock:  
 - [Textures UV DPI](UV---DPI-(variable-or-homogeneous))  
-- [Operators (and callbacks)](Operators)  
-- [bgl / blf](bgl_blf)  
-- [Grease Pencil](GreasePencil)  
+- [Operators (and callbacks)](Operators):lock:  
+- [bgl / blf](bgl_blf):lock:  
+- [Grease Pencil](GreasePencil):lock:  
   
 Add-ons  
 
-- [import / export](IO)  
-- [Text Editor](TextEditor)  
-- [Custom Nodes](CustomNodes)  
+- [import / export](IO):lock:  
+- [Text Editor](TextEditor):lock:  
+- [Custom Nodes](CustomNodes):lock:  

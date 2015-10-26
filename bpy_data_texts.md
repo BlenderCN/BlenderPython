@@ -18,17 +18,18 @@ f = bpy.data.texts.new('new_text.txt')
 f.from_string(some_str)
 ```
 
-### Storing as json or literal
+## Storing as json or dict literal
 
 Both methods below only work on dicts that can be stringified, so they can't contain Objects.
 
-**json**
+### json 
+___
 
 A general Python solution to this involving JSON writing and reading. JSON can easily be constructed from a dictionary and written to `bpy.data.texts` as a string.
 
 Imagine you have some dict of information, call it `my_dict`. To write that dict as a JSON to the .blend file you do:
 
-python
+```python
     import bpy
     import json
     
@@ -42,8 +43,11 @@ python
     m = json.dumps(my_dict, sort_keys=True, indent=2)
     text_block = bpy.data.texts.new('my_storage.json')
     text_block.from_string(m)
+```
 
 `bpy.data.texts['my_storage.json']` would then contain:
+
+```python
 
     {
       "key1": "some string storage",
@@ -54,10 +58,10 @@ python
       ],
       "key3": 5
     }
-
+```
 to read this back in at a later stage:
 
-
+```python
     import bpy
     import json
     
@@ -67,10 +71,12 @@ to read this back in at a later stage:
     my_json = json.loads(text_str)
     print(my_json['key1'])
 
-_______
+```
 
-**dict and ast.literal_eval**
 
+### dict and ast.literal_eval
+___
+```python
     import bpy
     import ast
     
@@ -88,3 +94,4 @@ _______
     
     for k, v in my_read_dict.items():
         print(k, v)
+```

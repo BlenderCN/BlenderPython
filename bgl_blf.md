@@ -10,7 +10,9 @@ Else there is [further reading](Further_Reading_LA) to accompany this if things 
 
 This is a python wrapper around openGL drawing commands. openGL is a big topic, but once you understand the elementary concepts (which I intend to cover here) the learning curve for new openGL concepts gets less steep. It's possible to accomplish a lot without really knowing much about how openGL or the wrapper works.
 
-You want to draw stuff.
+You want to draw stuff. We could start with drawing 3d lines in the viewport with bgl, but Blender comes with a nice template to draw 2d lines. Let's start minimal.
+
+_TextEditor -> Templates -> Python -> 3dView Modal Draw_
 
 
 

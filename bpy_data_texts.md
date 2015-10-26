@@ -1,7 +1,7 @@
 disambiguation : Font object
 
 ### Text DataBlock (text files inside Blender)
-
+____
 Text data-blocks are used for all kinds of things.  Storing
 
 - notes  
@@ -10,6 +10,7 @@ Text data-blocks are used for all kinds of things.  Storing
 - Any string.
 
 ### Creating a new text block with content
+____
 
 ```python
 some_str = "Hello\nMy name is\ngobbledigook"
@@ -27,6 +28,7 @@ A general Python solution to this involving JSON writing and reading. JSON can e
 
 Imagine you have some dict of information, call it `my_dict`. To write that dict as a JSON to the .blend file you do:
 
+python
     import bpy
     import json
     

@@ -45,7 +45,7 @@ Things to consider:
  - (pro) it is fast.  
  - (pro) Faces have a normal and that can be used as an orientation.  
  - (pro) Faces have an area, this can be used to scale the duplicates individually.  
- - (con) you have to create 3 or 4 vertices and corresponding face keys for your mesh. (This is a bit more work...it's not really a downside, but it needs to be mentioned).
+ - (con) you have to create 3 or 4 vertices and corresponding face keys for your mesh for each desired duplicate. (This is a bit more work...it's not really a downside, but it needs to be mentioned).
 
 The code: in order to demonstrate this using an object that has a good number of faces all pointing in different directions and all with different sizes. A UV Sphere. Here you'll notice the angles and scales of the duplicated object correspond to the face areas and face normals.
 

@@ -102,8 +102,8 @@ def create_uv_sphere(name, u=5, v=4, d=1):
     bpy.context.scene.objects.link(obj)
     return obj
 
-parent = create_uv_sphere('my_uvsphere', u=5, v=4, d=1)
-child = create_uv_sphere('my_uvsphere', u=8, v=8, d=0.2)
+parent = create_uv_sphere('parent_uvsphere', u=5, v=4, d=1)
+child = create_uv_sphere('child_uvsphere', u=8, v=8, d=0.2)
 
 child.parent = parent
 parent.dupli_type = 'FACES'

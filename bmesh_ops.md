@@ -1,4 +1,7 @@
-bmesh.ops primitives
+Two main sections of bmesh.ops are _primitives_ and _mesh operations_.
+
+### bmesh.ops  primitives
+____
 
 To create a uv sphere without `bpy.ops`:
 ```python
@@ -22,4 +25,3 @@ create_uv_sphere('my_uvsphere', u=5, v=4, d=1)
     
 ```
 
-bmesh.ops mesh operations

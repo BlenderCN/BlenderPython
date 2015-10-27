@@ -1,5 +1,3 @@
-Two main sections of bmesh.ops are _primitives_ and _mesh operations_.
-
 ### bmesh.ops  primitives
 ____
 

@@ -1,3 +1,5 @@
+> TODO: show foreach_set for curve data
+
 Blender has two main type of Curve types. 2D and 3D - and both have a variety of Spline types. Maybe this doesn't mean much to you if you haven't used Blender's Curves much, but it will be apparent after a bit of experimentation.
 
 Available Spline types: `('POLY', 'BEZIER', 'BSPLINE', 'CARDINAL', 'NURBS')`. Each of these types expects its coordinate information in a different way. 

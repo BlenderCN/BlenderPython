@@ -26,21 +26,20 @@ def make_text_object(txt, props):
     if name in objects:
         obj = objects[name]
     else:
-        object = objects.new(name, f)
+        obj = objects.new(name, f)
         scene.objects.link(obj)
-
-    # MISC
-    f.body = txt
-    f.size = props.get('size', 1.0)
     
     # there's two checks, 1) did we pass a font name, 2) is it valid.
     default = bpy.data.fonts.get('Bfont')
-    if props.get('fontname')
+    if props.get('fontname'):
         f.font = bpy.data.fonts.get(props['fontname'], default)
     else:
         f.font = default
 
+    f.body = txt
+
     setters = [
+        'size',
         # space
         'space_character',
         'space_word',
@@ -59,5 +58,9 @@ def make_text_object(txt, props):
     # some dynamic programming
     for propname in setters:
         if props.get(propname):
-            setattr(f, propname, props.get(propname)
+            setattr(f, propname, props.get(propname))
+
+    return obj
+
+make_text_object('far out man', {})
 ```

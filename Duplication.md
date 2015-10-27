@@ -26,7 +26,7 @@ Things to consider:
 - (con) vertex normals are overwritten by default when you enter edit mode of the parent object.  
 - (con) no way to scale individual duplicates.  
 
-Reusing code created for the [bmesh.ops (primitives) page](https://github.com/zeffii/BlenderPythonRecipes/wiki/bmesh_ops_primitives), minus some comments. Read that link if you encounter problems.
+Reusing code created for the [Mesh](Mesh) page, minus some comments. Read that link if you encounter problems.
 
 You can execute this code with or without the last if statement. The last if statement shows how to switch on dupli vert rotation and how to set the normal of the vertices.
 
@@ -36,37 +36,64 @@ import bmesh
 import math
 import random
 
-def create_uv_sphere(name, u=5, v=4, d=1):
-    bm = bmesh.new()
-    bmesh.ops.create_uvsphere(bm, u_segments=u, v_segments=v, diameter=d)
+
+def create_cube(name, d=1, faces=True):
+ 
+    Verts = [
+        (1.0, 1.0, -1.0),
+        (1.0, -1.0, -1.0),
+        (-1.0, -1.0, -1.0),
+        (-1.0, 1.0, -1.0),
+        (1.0, 1.0, 1.0),
+        (1.0, -1.0, 1.0),
+        (-1.0, -1.0, 1.0),
+        (-1.0, 1.0, 1.0)
+    ]
+
+    face_indices = [
+        (0, 1, 2, 3),
+        (4, 7, 6, 5),
+        (0, 4, 5, 1),
+        (1, 5, 6, 2),
+        (2, 6, 7, 3),
+        (4, 0, 3, 7)
+    ]
+     
+    Faces = face_indices if faces else []
+
+    if not (d == 1.0):
+        Verts = [tuple(v*d for v in vert) for vert in Verts]
 
     mesh = bpy.data.meshes.new(name + "_mesh")
-    bm.to_mesh(mesh)
-    bm.free()
+    mesh.from_pydata(Verts, [], Faces)
+    mesh.update()
 
-    obj = bpy.data.objects.new(name, mesh)
-    bpy.context.scene.objects.link(obj)
+    obj = bpy.data.objects.new(name + "_Object", mesh)
+    bpy.context.scene.objects.link(obj)  
     return obj
 
-parent = create_uv_sphere('my_uvsphere', u=3, v=2, d=1)
-child = create_uv_sphere('my_uvsphere', u=3, v=2, d=0.2)
 
-child.parent = parent
+parent = create_cube('parent_cube', d=1, faces=False)
 parent.dupli_type = 'VERTS'
 
+child = create_cube('child_cube', d=0.2)
+child.parent = parent
+
 # let's rotate the vertex normals of the parent
+parent.use_dupli_vertices_rotation = True
 if (True):
     sin, cos = math.sin, math.cos
-    rnd_comp = lambda: random.random() * math.pi * 2
     for v in parent.data.vertices:
-        v.normal = sin(rnd_comp()), cos(rnd_comp()), sin(rnd_comp())
-    parent.data.update()
-    parent.use_dupli_vertices_rotation = True
+        rndx = random.random() * math.pi * 2
+        rndy = random.random() * math.pi * 2
+        rndz = random.random() * math.pi * 2
+        v.normal = sin(rndx), cos(rndy), cos(rndy)
+
 
 ```
-gets you something like this: I didn't bother to remove faces/edges, but all that's technically needed for the DupliVert is a _parent_ mesh Object containing verts, and of-course the child object.
+gets you something like this: all that's technically needed for the DupliVert is a _parent_ mesh Object containing verts, and of-course the child object.
 
-![img dupliverts](https://cloud.githubusercontent.com/assets/619340/10757098/f7f2e762-7ca8-11e5-922e-0c0e8823999e.png)
+![img dupliverts](https://cloud.githubusercontent.com/assets/619340/10757990/a6368996-7cae-11e5-8d61-b8908ca7b3ac.png)
 
 ### DupliFaces (duplication on faces)
 ____

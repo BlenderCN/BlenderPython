@@ -2,7 +2,7 @@ Welcome to the Blender Python Recipes wiki!
 _curated and opinionated snippets for bpy_  
 **(Work In Progress until this message goes)**
 
-Scripting examples are listed in the section to the right.
+Scripting examples are listed in the section to the right. Use the pages dropdown menu (with the arrow) if you need to search by term.
   
 - :lock: means i've not put much time into it  
 - :wrench: means some content was added but there's more where that came from  

@@ -9,8 +9,9 @@ Rather than creating thousands of unique Objects, which
 1. take up a lot of space in memory, and 
 2. require name collision checking
 
-### DupliVerts (duplication on vertices)
 
+### DupliVerts (duplication on vertices)
+____
 It's possible to do this by making 2 objects.  
 
   - In words: 
@@ -28,7 +29,7 @@ It's possible to do this by making 2 objects.
 >   - no way to scale individual duplicates.
 
 ### DupliFaces (duplication on faces)
-
+____
 very similar to DupliVerts, but this time instead of using vertices to give a duplication origin, it uses the face's median (think of average vertex). 
 
 Below - using a (parent) disjoint mesh of quads to duplicate the cone (child):   

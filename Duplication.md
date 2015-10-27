@@ -28,7 +28,7 @@ Things to consider:
 
 Reusing code created for the [Mesh](Mesh) page, minus some comments. Read that link if you encounter problems.
 
-You can execute this code with or without the last if statement. The last if statement shows how to switch on dupli vert rotation and how to set the normal of the vertices.
+You can execute this code with or without the last `if-statement`. The last if statement shows how to switch on dupli vert rotation and how to set the normal of the vertices.
 
 ```python
 import bpy

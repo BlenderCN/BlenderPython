@@ -26,10 +26,42 @@ Things to consider:
 - (con) vertex normals are overwritten by default when you enter edit mode of the parent object.  
 - (con) no way to scale individual duplicates.  
 
-You can execute this code with or without the line that modifies each vertices' normal.
+Reusing code created for the [bmesh.ops (primitives) page](https://github.com/zeffii/BlenderPythonRecipes/wiki/bmesh_ops_primitives), minus some comments. Read that link if you encounter problems.
+
+You can execute this code with or without the last if statement. The last if statement shows how to switch on dupli vert rotation and how to set the normal of the vertices.
 
 ```python
+import bpy
+import bmesh
+import math
+import random
 
+def create_uv_sphere(name, u=5, v=4, d=1):
+    bm = bmesh.new()
+    bmesh.ops.create_uvsphere(bm, u_segments=u, v_segments=v, diameter=d)
+
+    mesh = bpy.data.meshes.new(name + "_mesh")
+    bm.to_mesh(mesh)
+    bm.free()
+
+    obj = bpy.data.objects.new(name, mesh)
+    bpy.context.scene.objects.link(obj)
+    return obj
+
+parent = create_uv_sphere('my_uvsphere', u=3, v=2, d=1)
+child = create_uv_sphere('my_uvsphere', u=3, v=2, d=0.2)
+
+child.parent = parent
+parent.dupli_type = 'VERTS'
+
+# let's rotate the vertex normals of the parent
+if (True):
+    sin, cos = math.sin, math.cos
+    rnd_comp = lambda: random.random() * math.pi * 2
+    for v in parent.data.vertices:
+        v.normal = sin(rnd_comp()), cos(rnd_comp()), sin(rnd_comp())
+    parent.data.update()
+    parent.use_dupli_vertices_rotation = True
 
 ```
 

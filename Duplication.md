@@ -28,6 +28,13 @@ It's possible to do this by making 2 objects.
 >   - vertex normals are overwritten by default when you enter edit mode of the parent object.
 >   - no way to scale individual duplicates.
 
+You can execute this code with or withot the line that modifies each vertices' normal.
+
+```python
+
+
+```
+
 ### DupliFaces (duplication on faces)
 ____
 very similar to DupliVerts, but this time instead of using vertices to give a duplication origin, it uses the face's median (think of average vertex). 
@@ -44,3 +51,9 @@ Below - using a (parent) disjoint mesh of quads to duplicate the cone (child):
 > downside:  
 >
 >  - you have to create 3 or 4 vertices and corresponding face keys for your mesh. (This is a bit more work...it's not really a downside, but it needs to be mentioned)
+
+The code: in order to demonstrate this using an object that has a good number of faces all pointing in different directions and all with different sizes. A UV Sphere. Here you'll notice the angles and scales of the duplicated object correspond to the face areas and face normals.
+
+```python
+
+```

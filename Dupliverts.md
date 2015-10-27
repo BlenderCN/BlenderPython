@@ -9,7 +9,7 @@ Rather than creating thousands of unique Objects, which
 1. take up a lot of space in memory, and 
 2. require name collision checking
 
-### Dupliverts
+### Dupliverts (on vertices)
 
 It's possible to do this by making 2 objects.  
 

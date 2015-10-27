@@ -36,3 +36,5 @@ def create_uv_sphere(name, u=5, v=4, d=1):
 create_uv_sphere('my_uvsphere', u=5, v=4, d=1)
     
 ```
+
+If you get `SyntaxError: non-keyword arg after keyword arg` it's [explained here in the python docs](https://docs.python.org/3.4/tutorial/controlflow.html#keyword-arguments).

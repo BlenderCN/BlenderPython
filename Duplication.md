@@ -19,13 +19,13 @@ It's possible to do this by making 2 objects.
   - In images: this tends to make immediate sense.
 
 
-upside:
-  - it is fast, very fast.
-  - it is possible to rotate the objects vertex normals and use them as rotation values.
-
-Downside: 
-  - vertex normals are overwritten by default when you enter edit mode of the parent object.
-  - no way to scale individual duplicates.
+> upside:
+>   - it is fast, very fast.
+>   - it is possible to rotate the objects vertex normals and use them as rotation values.
+>
+> Downside: 
+>   - vertex normals are overwritten by default when you enter edit mode of the parent object.
+>   - no way to scale individual duplicates.
 
 ### DupliFaces (duplication on faces)
 

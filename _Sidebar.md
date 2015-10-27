@@ -8,7 +8,7 @@ Objects / Mesh / BMesh
 - [bmesh.ops - primitives](bmesh_ops_primitives)  
 - [bmesh.ops - mesh operations](bmesh_ops_meshops)  
 - [Curves (2d, 3d)](Curves)  
-- [Duplication (instancing on verts or faces)](Duplication):lock:  
+- [Duplication (instancing)](Duplication):lock:  
 - [Text (Font Objects)](Text):lock:  
 - [Metaballs](Metaballs)  
 

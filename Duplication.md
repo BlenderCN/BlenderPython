@@ -15,8 +15,8 @@ ____
 It's possible to do this by making 2 objects.  
 
   - In words: 
-     - child: _1 Sphere_ 
-     - parent: _1 vertex based mesh Object_ with vertices at the locations where you want the spheres to be duplicated. 
+     - child: _1 Cube_ (with verts and faces) 
+     - parent: _1 vertex based mesh Object_ with vertices at the locations where you want the cubes-children to be duplicated. 
   - In images: this tends to make immediate sense.
 
 Things to consider:  

@@ -1,6 +1,6 @@
 [main](https://github.com/zeffii/BlenderPythonRecipes/wiki)  
 ______
-Objects : bpy.data.objects  
+Objects : bpy.data.objects  , and operations.
 
 - [Empty - null object](Empty-(null-object))  
 - [Mesh](Mesh)  

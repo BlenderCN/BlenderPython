@@ -6,7 +6,7 @@ Objects : bpy.data.objects
 - [Mesh](Mesh)  
 - [Bmesh](BMesh)  
 - [Curves (2d, 3d)](Curves)  
-- [Dupliverts (instancing)](Dupliverts):lock:  
+- [Duplication (instancing on verts or faces)](Duplication):lock:  
 - [Text (Font Objects)](Text):lock:  
 - [Metaballs](Metaballs)  
 

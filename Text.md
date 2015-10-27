@@ -4,4 +4,60 @@ disambiguation: If you're looking for `bpy.data.texts` _text datablocks_ go [her
 
 In Blender terms _Text Objects_ are _Font Objects_, and both refer to the same thing. They are of type `type == 'FONT'`, and closely related to the Curve Object type. The individual glyphs can't be edited until converted to `type=='CURVE'`. Text Objects have many parameters. The most important parameter of the Font type is possibly the font face. Confusingly this is called the font _type_. Like Helvetica vs Gill Sans.
 
-(todo)
+untested code
+```python
+
+import bpy
+
+def make_text_object(txt, props):
+    scene = bpy.context.scene
+    curves = bpy.data.curves
+    objects = bpy.data.objects
+
+    name = props.get(name, 'default name')
+
+    # CURVES
+    if not (name in curves):
+        f = curves.new(name, 'FONT')
+    else:
+        f = curves[name]
+
+    # CONTAINER OBJECTS
+    if name in objects:
+        obj = objects[name]
+    else:
+        object = objects.new(name, f)
+        scene.objects.link(obj)
+
+    # MISC
+    f.body = txt
+    f.size = props.get('size', 1.0)
+    
+    # there's two checks, 1) did we pass a font name, 2) is it valid.
+    default = bpy.data.fonts.get('Bfont')
+    if props.get('fontname')
+        f.font = bpy.data.fonts.get(props['fontname'], default)
+    else:
+        f.font = default
+
+    setters = [
+        # space
+        'space_character',
+        'space_word',
+        'space_line',
+        'offset_x',
+        'offset_y',
+        # modifications
+        'offset',
+        'extrude',
+        # bevel
+        'bevel_depth',
+        'bevel_resolution',
+        'align'
+    ]
+    
+    # some dynamic programming
+    for propname in setters:
+        if props.get(propname):
+            setattr(f, propname, props.get(propname)
+```

@@ -35,8 +35,11 @@ Below - using a (parent) disjoint mesh of quads to duplicate the cone (child):
 ![img face dupe](https://cloud.githubusercontent.com/assets/619340/10752213/72749cb4-7c87-11e5-9915-f435458937a3.png)
 
 upside: 
+
   - it is fast
   - Faces have a normal and that can be used as an orientation.
   - Faces have an area, this can be used to scale the duplicates individually.  
+
 downside:  
+
   - you have to create 3 or 4 vertices and corresponding face keys for your mesh. (This is a bit more work...it's not really a downside, but it needs to be mentioned)

@@ -31,6 +31,7 @@ Order / Organization
   
 Miscellaneous  
 
+- [Modifiers](Modifiers)  
 - [Particle Systems](Particle Systems)  
 - [vertex colors](VertexColors):lock:  
 - [Textures UV DPI](UV---DPI-(variable-or-homogeneous))  

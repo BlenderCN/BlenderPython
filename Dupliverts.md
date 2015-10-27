@@ -18,3 +18,15 @@ It's possible to do this by making 2 objects.
      - parent: _1 vertex based mesh Object_ with vertices at the locations where you want the spheres to be duplicated. 
   - In images: this tends to make immediate sense.
 
+
+upside:
+  - it is fast, very fast.
+  - it is possible to rotate the objects vertex normals and use them as rotation values.
+
+Downside: 
+  - vertex normals are overwritten by default when you enter edit mode of the parent object.
+  - no way to scale individual duplicates.
+
+### Dupliverts (on faces)
+
+very similar to dupli

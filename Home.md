@@ -3,12 +3,12 @@ _curated and opinionated snippets for bpy_
 **(Work In Progress until this message goes)**
 
 Scripting examples are listed in the section to the right. Use the pages dropdown menu (with the arrow) if you need to search by term.
+
+> Teachers open the door, but you must enter by yourself.  
   
 - :lock: means i've not put much time into it  
 - :wrench: means some content was added but there's more where that came from  
 - no emojii means it's OK for the time being.
-
-> Teachers open the door, but you must enter by yourself.
 
 **Why Recipes?**   
 The `bpy` documentation is mostly auto-generated and tends to be (October 2015) rather sparse on details; that's fine for most confident python-heads, but people trying to learn python and `bpy`  benefit more from seeing many short samples. A github _markdown based_ wiki is a convenient way to collect snippets and allow people to contribute updates and fixes.

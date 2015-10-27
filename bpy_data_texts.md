@@ -17,6 +17,8 @@ f = bpy.data.texts.new('new_text.txt')
 f.from_string(some_str)
 ```
 
+You might find that it can be useful to indicate what kind of data the _text block_ stores. Just like variables, it's useful to name the text blocks in a meaningful way. The addition of the file-type extension is not mandatory, but often it can describe quickly how the data is arranged.
+
 ### reading and writing _json_ or _dict literal_
 
 Both methods below work only on dicts that can be stringified, so they can't contain Objects.

@@ -24,4 +24,4 @@ def create_uv_sphere(name, u=5, v=4, d=1):
 create_uv_sphere('my_uvsphere', u=5, v=4, d=1)
     
 ```
-
+search bpy docs for `bmesh.ops.create` for the full list of parameters available for `create_uvsphere`.

@@ -35,7 +35,7 @@ You can execute this code with or without the line that modifies each vertices' 
 
 ### DupliFaces (duplication on faces)
 ____
-very similar to DupliVerts, but this time instead of using vertices to give a duplication origin, it uses the face's median (think of average vertex). 
+very similar to DupliVerts, but this time it uses the face medians (think of average vertex) as duplication locations. 
 
 Below - using a (parent) disjoint mesh of quads to duplicate the cone (child):   
 ![img face dupe](https://cloud.githubusercontent.com/assets/619340/10752213/72749cb4-7c87-11e5-9915-f435458937a3.png)

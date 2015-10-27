@@ -3,7 +3,15 @@ Two main sections of bmesh.ops are _primitives_ and _mesh operations_.
 ### bmesh.ops  primitives
 ____
 
-Search bpy docs for `bmesh.ops.create` for the full list primitives and their parameters lists.
+- bmesh.ops.create_grid  
+- bmesh.ops.create_uvsphere  
+- bmesh.ops.create_icosphere  
+- bmesh.ops.create_monkey  
+- bmesh.ops.create_cone  
+- bmesh.ops.create_circle  
+- bmesh.ops.create_cube  
+
+Currently bpy docs lists the above primitives, but search the docs with `bmesh.ops.create` for the full list of primitives and their parameter lists.
 
 To create a uv sphere without `bpy.ops`:
 ```python

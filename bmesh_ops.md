@@ -32,6 +32,7 @@ def create_uv_sphere(name, u=5, v=4, d=1):
     # create object and link to scene
     obj = bpy.data.objects.new(name, mesh)
     bpy.context.scene.objects.link(obj)
+    return obj
 
 create_uv_sphere('my_uvsphere', u=5, v=4, d=1)
     

@@ -8,7 +8,7 @@ Objects / Mesh / BMesh
 - [bmesh.ops - primitives](bmesh_ops_primitives)  
 - [bmesh.ops - mesh operations](bmesh_ops_meshops)  
 - [Curves (2d, 3d)](Curves)  
-- [Duplication (instancing)](Duplication):lock:  
+- [Duplication (instancing)](Duplication)  
 - [Text (Font Objects)](Text):lock:  
 - [Metaballs](Metaballs)  
 
@@ -20,9 +20,9 @@ Time and Motion
 
 Miscellaneous `bpy.data.*`  
 
-- [bpy.data.materials (Nodes)](bpy_data_materials):lock:  
-- [bpy.data.texts](bpy_data_texts)  
-- [bpy.data.images (Image Pixel manipulation)](Image_Pixels)  
+- [.materials (Nodes)](bpy_data_materials):lock:  
+- [.texts](bpy_data_texts)  
+- [.images (Pixel scripting)](Image_Pixels)  
 
 Order / Organization  
   

@@ -49,7 +49,7 @@ Things to consider:
 
 The code: in order to demonstrate this using an object that has a good number of faces all pointing in different directions and all with different sizes. A UV Sphere. Here you'll notice the angles and scales of the duplicated object correspond to the face areas and face normals.
 
-Reusing code created for the [bmesh.ops (primitives) page](https://github.com/zeffii/BlenderPythonRecipes/wiki/bmesh_ops), minus some comments. Read that link if you encounter problems.
+Reusing code created for the [bmesh.ops (primitives) page](https://github.com/zeffii/BlenderPythonRecipes/wiki/bmesh_ops_primitives), minus some comments. Read that link if you encounter problems.
 
 ```python
 import bpy

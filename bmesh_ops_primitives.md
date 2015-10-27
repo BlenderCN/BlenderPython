@@ -11,7 +11,8 @@ ____
 
 Currently bpy docs lists the above primitives, but search the docs with `bmesh.ops.create` for the full list of primitives and their parameter lists.
 
-To create a uv sphere without `bmesh.ops`:
+To create a uv sphere with `bmesh.ops`:
+
 ```python
 import bpy
 import bmesh

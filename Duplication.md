@@ -1,4 +1,4 @@
-The scenario to consider here is as follows: You need to render thousands of spheres and each sphere has a unique center coordinate. Creating thousands of spheres one Object at a time, even when scripted, is a bit slow and gets increasingly slower overall when you add more Objects. 
+The scenario to consider here is as follows: You need to render thousands of spheres and each sphere has a unique center coordinate. Creating thousands of spheres one Object at a time, even when scripted, is a bit slow and becomes progressively slower the more objects you add.
 
 If you really want to know why that is, it's covered in here:
   - [object-creation-slows-over-time](http://blender.stackexchange.com/questions/14814/object-creation-slows-over-time)  

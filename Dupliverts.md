@@ -11,7 +11,7 @@ Rather than creating thousands of unique Objects, which
 
 It's possible to do this by making 2 objects.  
 
-  - In words: 1 Sphere and 1 object with vertices at the locations where you want the spheres to be duplicated. 
+  - In words: _1 Sphere_ and _1 vertex based mesh Object_ with vertices at the locations where you want the spheres to be duplicated. 
   - In images: this tends to make immediate sense.
 
 

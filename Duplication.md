@@ -21,7 +21,7 @@ It's possible to do this by making 2 objects.
 
 > upside:
 >   - it is fast, very fast.
->   - it is possible to rotate the objects vertex normals and use them as rotation values.
+>   - it is possible to rotate the object's vertex normals and use them as rotation values.
 >
 > Downside: 
 >   - vertex normals are overwritten by default when you enter edit mode of the parent object.
@@ -34,12 +34,12 @@ very similar to DupliVerts, but this time instead of using vertices to give a du
 Below - using a (parent) disjoint mesh of quads to duplicate the cone (child):   
 ![img face dupe](https://cloud.githubusercontent.com/assets/619340/10752213/72749cb4-7c87-11e5-9915-f435458937a3.png)
 
-upside: 
-
-  - it is fast
-  - Faces have a normal and that can be used as an orientation.
-  - Faces have an area, this can be used to scale the duplicates individually.  
-
-downside:  
-
-  - you have to create 3 or 4 vertices and corresponding face keys for your mesh. (This is a bit more work...it's not really a downside, but it needs to be mentioned)
+> upside: 
+> 
+>  - it is fast
+>  - Faces have a normal and that can be used as an orientation.
+>  - Faces have an area, this can be used to scale the duplicates individually.  
+>
+> downside:  
+>
+>  - you have to create 3 or 4 vertices and corresponding face keys for your mesh. (This is a bit more work...it's not really a downside, but it needs to be mentioned)

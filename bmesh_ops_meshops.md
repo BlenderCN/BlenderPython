@@ -1,0 +1,1 @@
+`bmesh.ops` brings a lot of convenience and power to the scripter.

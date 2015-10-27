@@ -5,6 +5,7 @@ Objects : bpy.data.objects
 - [Empty - null object](Empty-(null-object))  
 - [Mesh](Mesh)  
 - [Bmesh](BMesh)  
+- [bmesh.ops](bmesh_ops)  
 - [Curves (2d, 3d)](Curves)  
 - [Duplication (instancing on verts or faces)](Duplication):lock:  
 - [Text (Font Objects)](Text):lock:  

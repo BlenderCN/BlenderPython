@@ -73,7 +73,7 @@ ____
 
 **dict and ast.literal_eval**  
 
-here we write the string representation of the dict to an existing text datablock. I've shown in previous examples how to create text datablocks, this shows how to reference one that already exists. Notice i've omitted the file-extention, you can decide whether that's good convention or not. hint: probably not.
+here we write the string representation of the dict to an existing text datablock called `'dict_storage'`. I've shown in previous examples how to create text datablocks, this shows how to reference one that already exists. Notice i've omitted the file-extention, you can decide whether that's good convention or not. hint: probably not.
 
 ```python
 import bpy

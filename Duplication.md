@@ -64,6 +64,9 @@ if (True):
     parent.use_dupli_vertices_rotation = True
 
 ```
+gets you something like this: I didn't bother to remove faces/edges, but all that's technically needed for the DupliVert is a mesh containing verts. 
+
+![img dupliverts](https://cloud.githubusercontent.com/assets/619340/10757098/f7f2e762-7ca8-11e5-922e-0c0e8823999e.png)
 
 ### DupliFaces (duplication on faces)
 ____

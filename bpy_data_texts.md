@@ -2,7 +2,7 @@ disambiguation: If you're looking for `Font / Text Object` go [here](Text)
 
 ### Text DataBlock (text files inside Blender)
 ____
-Text data-blocks are used for all kinds of things.  Storing
+Text data-blocks are used for storing all kinds of things.  
 
 - notes  
 - scripts

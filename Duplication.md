@@ -49,6 +49,22 @@ Things to consider:
 
 The code: in order to demonstrate this using an object that has a good number of faces all pointing in different directions and all with different sizes. A UV Sphere. Here you'll notice the angles and scales of the duplicated object correspond to the face areas and face normals.
 
-```python
+Reusing some of the code created for the [bmesh.ops wiki page](https://github.com/zeffii/BlenderPythonRecipes/wiki/bmesh_ops)
 
+```python
+import bpy
+import bmesh
+
+def create_uv_sphere(name, u=5, v=4, d=1):
+    bm = bmesh.new()
+    bmesh.ops.create_uvsphere(bm, u_segments=u, v_segments=v, diameter=d)
+
+    mesh = bpy.data.meshes.new(name + "_mesh")
+    bm.to_mesh(mesh)
+    bm.free()
+
+    obj = bpy.data.objects.new(name, mesh)
+    bpy.context.scene.objects.link(obj)
+
+create_uv_sphere('my_uvsphere', u=5, v=4, d=1)
 ```

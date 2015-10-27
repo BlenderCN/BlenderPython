@@ -2,7 +2,7 @@ disambiguation: If you're looking for `bpy.data.texts` _text datablocks_ go [her
 
 ### Text Objects / Font Objects
 
-In Blender _Text Objects_ are `type == 'FONT'`, and are closely related to the Curve Object type. The big difference is that the individual glyphs can't be edited until converted to `type == 'CURVE'`. Text Objects have many parameters. The most important parameter of the `'FONT'` type is possibly the font face / family (like Helvetica,..Gill Sans). Confusingly this property is called `.font`.
+In Blender _Text Objects_ are `type == 'FONT'`, and are closely related to the Curve data type. The big difference is that the individual glyphs can't be edited until converted to `type == 'CURVE'`. Text Objects have many parameters. The most important parameter of the `'FONT'` type is possibly the font face / family (like Helvetica,..Gill Sans). Confusingly this property is called `.font`.
 
 ```python
 

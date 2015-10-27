@@ -67,6 +67,9 @@ def bmesh_from_pydata(verts=None, edges=None, faces=None):
     ''' verts is necessary, edges/faces are optional '''
 
     bm = bmesh.new()
+    if not verts:
+        return bm
+
     add_vert = bm.verts.new
 
     bm_verts = [add_vert(co) for co in verts]

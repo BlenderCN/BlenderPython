@@ -9,7 +9,7 @@ Text data-blocks are used for storing all kinds of things.
 - data (coordinates, data structures, relationships, etc.,)
 - essentially anything that can be stored as a string(*).
 
-Creating a new text block with content is as simple as this:
+Creating a new text datablock with content is as simple as this:
 
 ```python
 some_str = "Hello\nMy name is\ngobbledigook"
@@ -17,7 +17,7 @@ f = bpy.data.texts.new('new_text.txt')
 f.from_string(some_str)
 ```
 
-You might find that it can be useful to indicate what kind of data the _text block_ stores. Just like variables, it's useful to name the text blocks in a meaningful way. The addition of the file-type extension is not mandatory, but often it can describe quickly how the data is arranged.
+You might find that it can be useful to indicate what kind of data the _text datablock_ stores. Just like variables, it's useful to name the text datablocks in a meaningful way. The addition of the file-type extension is not mandatory, but often it can describe quickly how the data is arranged.
 
 ### reading and writing _json_ or _dict literal_
 

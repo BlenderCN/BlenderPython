@@ -74,5 +74,6 @@ child.parent = parent
 parent.dupli_type = 'FACES'
 parent.use_dupli_faces_scale = True
 
-
 ```
+creates this:  
+![image dupli-faces](https://cloud.githubusercontent.com/assets/619340/10755855/96c8a9f2-7ca0-11e5-8748-33b1b321130f.png)

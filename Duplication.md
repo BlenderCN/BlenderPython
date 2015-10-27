@@ -17,7 +17,8 @@ It's possible to do this by making 2 objects.
   - In words: 
      - child: _1 Cube_ (with verts and faces) 
      - parent: _1 vertex based mesh Object_ with vertices at the locations where you want the cubes-children to be duplicated. 
-  - In images: this tends to make immediate sense.
+  - In images: this tends to make immediate sense. Here the dots represent the Vertices of the _parent Object_ (A cube without faces/edges) and the small orange Cube in the middle is the child cube.
+  ![image show](https://cloud.githubusercontent.com/assets/619340/10758302/ecd082b0-7cb0-11e5-9a56-b2b6fdc06093.png)
 
 Things to consider:  
 

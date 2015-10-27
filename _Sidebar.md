@@ -9,7 +9,7 @@ Objects / Mesh / BMesh
 - [bmesh.ops - mesh ops](bmesh_ops_meshops):lock:  
 - [Curves (2d, 3d)](Curves)  
 - [Duplication (instancing)](Duplication)  
-- [Text (Font Objects)](Text):lock:  
+- [Text (Font Objects)](Text)  
 - [Metaballs](Metaballs)  
 
 Time and Motion 

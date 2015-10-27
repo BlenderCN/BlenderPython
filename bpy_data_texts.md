@@ -1,4 +1,4 @@
-disambiguation : Font object
+disambiguation: If you're looking for `Font / Text Object` go [here](Text)
 
 ### Text DataBlock (text files inside Blender)
 ____

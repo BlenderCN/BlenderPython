@@ -73,14 +73,14 @@ ____
 
 **dict and ast.literal_eval**  
 
+here we write the string representation of the dict to an existing text datablock. I've shown in previous examples how to create text datablocks, this shows how to reference one that already exists.
+
 ```python
 import bpy
 import ast
 
 mydict = dict(deb=["two", "three"], far="booo", foo=34)
 
-# write the string representation of the dict to a text datablock
-# this assumes you know how to create text datablocks, it is shown in the other method anyway.
 d = bpy.data.texts['dict_storage']
 d.from_string(str(mydict))
 

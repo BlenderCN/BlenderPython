@@ -9,7 +9,7 @@ untested code
 
 import bpy
 
-def make_text_object(txt, props):
+def make_text_object(name, txt, props):
     scene = bpy.context.scene
     curves = bpy.data.curves
     objects = bpy.data.objects
@@ -62,5 +62,5 @@ def make_text_object(txt, props):
 
     return obj
 
-make_text_object('far out man', {})
+make_text_object('my_text_object', 'far out man', {})
 ```

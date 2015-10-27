@@ -28,7 +28,7 @@ It's possible to do this by making 2 objects.
 >   - vertex normals are overwritten by default when you enter edit mode of the parent object.
 >   - no way to scale individual duplicates.
 
-You can execute this code with or withot the line that modifies each vertices' normal.
+You can execute this code with or without the line that modifies each vertices' normal.
 
 ```python
 

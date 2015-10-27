@@ -19,11 +19,12 @@ It's possible to do this by making 2 objects.
      - parent: _1 vertex based mesh Object_ with vertices at the locations where you want the spheres to be duplicated. 
   - In images: this tends to make immediate sense.
 
+Things to consider:  
 
->  - (pro) it is fast, very fast.
->  - (pro) it is possible to rotate the object's vertex normals and use them as rotation values.
->  - (con) vertex normals are overwritten by default when you enter edit mode of the parent object.
->  - (con) no way to scale individual duplicates.
+- (pro) it is fast, very fast.  
+- (pro) it is possible to rotate the object's vertex normals and use them as rotation values.  
+- (con) vertex normals are overwritten by default when you enter edit mode of the parent object.  
+- (con) no way to scale individual duplicates.  
 
 You can execute this code with or without the line that modifies each vertices' normal.
 

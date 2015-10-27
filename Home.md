@@ -4,9 +4,9 @@ _curated and opinionated snippets for bpy_
 
 Scripting examples are listed in the section to the right.
   
-:lock: means i've not put much time into it  
-:wrench: means some content was added but there's more where that came from  
-no emojii means it's OK for the time being.
+- :lock: means i've not put much time into it  
+- :wrench: means some content was added but there's more where that came from  
+- no emojii means it's OK for the time being.
 
 > Teachers open the door, but you must enter by yourself.
 

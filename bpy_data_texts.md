@@ -7,7 +7,7 @@ Text data-blocks are used for storing all kinds of things.
 - notes  
 - scripts
 - data (coordinates, data structures, relationships, etc.,)
-- Any string.
+- essentially anything that can be stored as a string(*).
 
 Creating a new text block with content is as simple as this:
 

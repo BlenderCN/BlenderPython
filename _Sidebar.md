@@ -6,7 +6,7 @@ Objects / Mesh / BMesh
 - [Mesh](Mesh)  
 - [Bmesh](BMesh)  
 - [bmesh.ops - primitives](bmesh_ops_primitives)  
-- [bmesh.ops - mesh operations](bmesh_ops_meshops)  
+- [bmesh.ops - mesh operations](bmesh_ops_meshops):lock:  
 - [Curves (2d, 3d)](Curves)  
 - [Duplication (instancing)](Duplication)  
 - [Text (Font Objects)](Text):lock:  
@@ -16,7 +16,7 @@ Time and Motion
 
 - [scripted keyframes](Keyframes):lock:  
 - [Event Handlers](EventHandlers):lock:  
-- [Drivers](Drivers)  
+- [Drivers](Drivers):wrench:  
 
 Miscellaneous `bpy.data.*`  
 
@@ -32,8 +32,8 @@ Order / Organization
   
 Miscellaneous  
 
-- [Modifiers](Modifiers)  
-- [Particle Systems](Particle Systems)  
+- [Modifiers](Modifiers):lock:  
+- [Particle Systems](Particle Systems):lock:  
 - [vertex colors](VertexColors):lock:  
 - [Textures UV DPI](UV---DPI-(variable-or-homogeneous))  
 - [Operators (and callbacks)](Operators):lock:  

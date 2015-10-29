@@ -64,3 +64,34 @@ def driver_func2(current_frame):
 # add function to driver_namespace
 bpy.app.driver_namespace['driver_func2'] = driver_func2
 ```
+
+### example 3 
+
+Change material depending on delta location of keyframed object
+
+```python
+import bpy
+from mathutils import Vector
+
+def driver_delta_to_RED(frame):
+
+
+    p = bpy.data.objects['Plane']
+    current_xyz = p.location
+    fcurve = p.animation_data.action.fcurves
+
+    x = fcurve[0].evaluate(frame-1)
+    y = fcurve[1].evaluate(frame-1)
+    z = fcurve[2].evaluate(frame-1)
+
+    # may want to find the top speed first, and normalize
+    # this value using that information
+    delta = (current_xyz - Vector((x, y, z))).length
+
+    nodes = bpy.data.materials[0].node_tree.nodes
+    nodes[1].inputs[0].default_value[0] = delta
+    # nodes.update()
+    return 0
+
+bpy.app.driver_namespace['driver_delta_to_RED'] = driver_delta_to_RED
+```

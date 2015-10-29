@@ -74,7 +74,7 @@ import bpy
 from mathutils import Vector
 
 def driver_delta_to_RED(frame):
-
+    # triggered by a frame change, any code inside here gets run.
 
     p = bpy.data.objects['Plane']
     current_xyz = p.location
@@ -90,6 +90,8 @@ def driver_delta_to_RED(frame):
 
     nodes = bpy.data.materials[0].node_tree.nodes
     nodes[1].inputs[0].default_value = (delta, 0, 0, 1.0)
+
+    # the return value is of no relevance and can be static.
     return 0.0
 
 bpy.app.driver_namespace['driver_delta_to_RED'] = driver_delta_to_RED

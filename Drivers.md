@@ -89,9 +89,8 @@ def driver_delta_to_RED(frame):
     delta = (current_xyz - Vector((x, y, z))).length
 
     nodes = bpy.data.materials[0].node_tree.nodes
-    nodes[1].inputs[0].default_value[0] = delta
-    # nodes.update()
-    return 0
+    nodes[1].inputs[0].default_value = (delta, 0, 0, 1.0)
+    return 0.0
 
 bpy.app.driver_namespace['driver_delta_to_RED'] = driver_delta_to_RED
 ```

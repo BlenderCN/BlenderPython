@@ -1,5 +1,7 @@
 I don't know a whole lot about these, and [the docs](https://www.blender.org/manual/animation/basics/drivers.html#driver-namespace) seem to do a good job of covering most things.
 
+Find neat tricks in _Templates -> Python -> Driver Functions_  
+  
 ### Driver from Python file
 
 This is the long way, the scenic route. Using a python expression from a file. Sometimes you'll have expressions that are a bit more complicated than what you can fit onto 1 line comfortably.

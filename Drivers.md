@@ -22,7 +22,7 @@ This is the long way, the scenic route. Using a python expression from a file. S
     bpy.app.driver_namespace['driver_func'] = driver_func
 
     ```  
-- Right-click the property in question, choose Add Single Driver
+- Right-click the property you want to control (for instance the X rotation of a cube), choose Add Single Driver
 - enable `Auto run python scripts` in _User Preferences -> File_.
 - Open the Graph Editor, and switch to Drivers view
 - select the driven property, and toggle the rightside panel  

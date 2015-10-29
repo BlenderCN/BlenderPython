@@ -26,7 +26,8 @@ This is the long way, the scenic route. Using a python expression from a file. S
 - enable `Auto run python scripts` in _User Preferences -> File_.
 - Open the Graph Editor, and switch to Drivers view
 - select the driven property, and toggle the rightside panel  
-  ![theimage](https://cloud.githubusercontent.com/assets/619340/10715506/092e8798-7b19-11e5-9570-421515d8849f.png)
+  ![theimage](https://cloud.githubusercontent.com/assets/619340/10715506/092e8798-7b19-11e5-9570-421515d8849f.png)  
+
 If your driver has a python error, you can correct it and run the code again to overwrite 
 the namespace key 'driver_func`. You can name this function whatever you wish, and can have as many of them as you need in the .blend.
 

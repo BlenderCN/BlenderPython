@@ -5,7 +5,7 @@ If you want to parent one object to another, don't use `bpy.ops`, use the `.pare
 ```python
 objects = bpy.data.objects
 cube = objects['Cube']
-sphere = object['Sphere']
+sphere = objects['Sphere']
 sphere.parent = cube
 ```
 

@@ -16,7 +16,7 @@ Time and Motion
 
 - [scripted keyframes](Keyframes):lock:  
 - [Event Handlers](EventHandlers):lock:  
-- [Drivers](Drivers):wrench:  
+- [Drivers](Drivers)  
 
 Miscellaneous `bpy.data.*`  
 

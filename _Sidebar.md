@@ -28,7 +28,7 @@ Order / Organization
   
 - [Grouping](Grouping):lock:  
 - [Parenting](Parenting):lock:  
-- [Layers](Layers):wrench:  
+- [Layers](Layers)  
   
 Miscellaneous  
 

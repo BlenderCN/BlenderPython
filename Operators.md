@@ -73,3 +73,15 @@ class SomeReusableOperator(bpy.types.Operator):
     col.operator(callback, text='function three').fn_name = 'function_three'
 
 ```
+You don't need to use `exec()` in the executure, using a full if-else would work too.. but do you need to?
+
+```python
+    def execute(self, context):
+        if self.fn_name == 'function_one':
+            function_one()
+        elif self.fn_name == 'function_two':
+            function_two()
+        elif self.fn_name == 'function_three':
+            function_three()
+        return {'FINISHED'}
+```

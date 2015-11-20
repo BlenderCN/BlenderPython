@@ -13,7 +13,7 @@ def unregister():
     bpy.utils.unregister_class(YourClassName)
 ```
 
-As your add-on becomes more complex you'll want to register more than 1 Class, but you probably don't want to be explicit about the class name for each new class. 
+As your add-on becomes more complex you'll want to register more than 1 class, but you probably don't want to be explicit about the class name for each new class. You can avoid writing code like this.
 
 ```python
 def register():

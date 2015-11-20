@@ -85,3 +85,9 @@ You don't need to use `exec()` in the execute function, using a full if-else wou
             function_three()
         return {'FINISHED'}
 ```
+or..
+```python
+    def execute(self, context):
+        # take from globals, the function named the same as the string stored in self.fn_name
+        globals()[self.fn_name]()
+```

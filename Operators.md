@@ -1,0 +1,1 @@
+Most of the useful information about Operators can be acquired by taking your time to read through the add-ons list. It's how I learnt it. My favorite snippets i've worked into a [sublime text editor autocomplete snippet set](https://github.com/zeffii/BlenderSublimeSnippets)

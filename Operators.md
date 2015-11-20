@@ -73,7 +73,7 @@ class SomeReusableOperator(bpy.types.Operator):
     col.operator(callback, text='function three').fn_name = 'function_three'
 
 ```
-You don't need to use `exec()` in the executure, using a full if-else would work too.. but do you need to?
+You don't need to use `exec()` in the execute function, using a full if-else would work too.. but do you need to? maybe you do, maybe you don't.
 
 ```python
     def execute(self, context):

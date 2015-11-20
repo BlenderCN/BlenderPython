@@ -73,7 +73,15 @@ class SomeReusableOperator(bpy.types.Operator):
     col.operator(callback, text='function three').fn_name = 'function_three'
 
 ```
-You don't need to use `exec()` in the execute function, using a full if-else would work too.. but do you need to? maybe you do, maybe you don't.
+You don't need to use `exec()` in the execute function, for dynamic programming you have many options. Another is finding the function within `globals()`:
+
+```python
+    def execute(self, context):
+        # self.fn_name stores the string name of the function
+        # take from globals, the function named the same as self.fn_name
+        globals()[self.fn_name]()
+```
+using a full if-else would work too.. but do you need to? maybe you do, maybe you don't. 
 
 ```python
     def execute(self, context):
@@ -85,10 +93,33 @@ You don't need to use `exec()` in the execute function, using a full if-else wou
             function_three()
         return {'FINISHED'}
 ```
-or..
+
+Maybe your functions take arguments. Your delegation class can have multiple properties besides `StringProperty`. Imagine the following
+
 ```python
+
+def function_one(): return None
+def function_two(): return None
+def function_three(): return None
+def function_four(): return None
+
+def function_five(a, b):
+    print(a + b)
+
+
+class SomeReusableOperator(bpy.types.Operator):
+
+    bl_idname = "wm.some_reusable_op"
+    bl_label = "Short Name"
+
+    param1 = bpy.props.IntProperty(default=20)
+    param2 = bpy.props.IntProperty(default=20)
+    fn_name = bpy.props.StringProperty(default='')
+
     def execute(self, context):
-        # self.fn_name stores the string name of the function
-        # take from globals, the function named the same as self.fn_name
-        globals()[self.fn_name]()
+        if self.fn_name == 'function_five':
+            function_five(param1, param2)
+        else:
+            exec(self.fn_name + '()')
+        return {'FINISHED'}
 ```

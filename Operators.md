@@ -4,7 +4,7 @@ My favorite things about the API might be worth explicitly mentioning.
 
 ### Registration
 
-If you have an addon / script with one class (Panels, Operator..etc.), you might register/unregister it using this. 
+If you have an addon / script with one class (Panel, Operator..etc.), you might register/unregister it using this. 
 ```python
 def register():
     bpy.utils.register_class(YourClassName)

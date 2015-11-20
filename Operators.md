@@ -1,1 +1,2 @@
-Most of the useful information about Operators can be acquired by taking your time to read through the add-ons list. It's how I learnt it. My favorite snippets i've worked into a [sublime text editor autocomplete snippet set](https://github.com/zeffii/BlenderSublimeSnippets)
+Most of the useful information about Operators can be acquired by taking your time to read through the add-on list. It's how I learnt it. My favorite snippets i've worked into a [sublime text editor autocomplete snippet set](https://github.com/zeffii/BlenderSublimeSnippets). The [bpy docs also cover](http://www.blender.org/api/blender_python_api_current/info_tutorial_addon.html?highlight=operators) the various forms of `Operators` in some detail.  
+

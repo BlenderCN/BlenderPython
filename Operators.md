@@ -131,6 +131,34 @@ The ui code to set the operator would then look like
     ...
     op_five = col.operator(callback, text='function five')
     op_five.fn_name = 'function_five'
-    op_five.param1 = 30  # either hard code these
-    op_five.param2 = 25  # or use bpy.types.Scene.some_property = IntProperty
+    op_five.param1 = 30
+    op_five.param2 = 25
 ```
+You might not want to hardcode param1 and param2 (but sometimes that's exactly what you want). For dynamic properties accessed via a Panel you need to register them as scene properties
+
+```python
+    scn = bpy.contex.scene
+    callback = "wm.some_reusable_op"
+    ...
+    ...
+    col.prop(scn, 'scene_param_1', text='param 1')
+    col.prop(scn, 'scene_param_2', text='param 2')
+    op_five = col.operator(callback, text='function five')
+    op_five.fn_name = 'function_five'
+    op_five.param1 = scn.scene_param_1
+    op_five.param2 = scn.scene_param_2
+
+
+# in your register / unregister functions (never forget to unregister too)
+
+def register():
+    ...
+    bpy.types.Scene.scene_param_1 = IntProperty()
+    bpy.types.Scene.scene_param_2 = IntProperty()
+
+def register():
+    ...
+    del bpy.types.Scene.scene_param_1
+    del bpy.types.Scene.scene_param_2
+```
+

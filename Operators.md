@@ -123,3 +123,14 @@ class SomeReusableOperator(bpy.types.Operator):
             exec(self.fn_name + '()')
         return {'FINISHED'}
 ```
+The ui code to set the operator would then look like
+
+```python
+    callback = "wm.some_reusable_op"
+    ...
+    ...
+    op_five = col.operator(callback, text='function five')
+    op_five.fn_name = 'function_five'
+    op_five.param1 = 30  # either hard code these
+    op_five.param2 = 25  # or use bpy.types.Scene.some_property = IntProperty
+```

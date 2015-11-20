@@ -38,3 +38,37 @@ def unregister():
     bpy.utils.unregister_module(__name__)
 ```
 
+### Callbacks.
+
+When we don't want to write a Class for each Operator, we can write a _delegation class_. Where the `execute` function behaves differently depending on some variable that was passed. 
+
+```python
+def function_one():
+	...
+
+def function_two():
+	...
+
+def function_three():
+	...
+
+
+class SomeReusableOperator(bpy.types.Operator):
+
+    bl_idname = "wm.some_reusable_op"
+    bl_label = "Short Name"
+
+    fn_name = bpy.props.StringProperty(default='')
+
+    def execute(self, context):
+        exec(self.fn_name + '()')
+        return {'FINISHED'}
+
+
+# in your ui layout draw code somewhere
+
+    col.operator("wm.some_reusable_op", text='function one').fn_name = 'function one'
+    col.operator("wm.some_reusable_op", text='function two').fn_name = 'function two'
+    col.operator("wm.some_reusable_op", text='function three').fn_name = 'function three'
+
+```

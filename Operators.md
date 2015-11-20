@@ -88,6 +88,7 @@ You don't need to use `exec()` in the execute function, using a full if-else wou
 or..
 ```python
     def execute(self, context):
-        # take from globals, the function named the same as the string stored in self.fn_name
+        # self.fn_name stores the string name of the function
+        # take from globals, the function named the same as self.fn_name
         globals()[self.fn_name]()
 ```

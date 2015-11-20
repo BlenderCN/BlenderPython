@@ -68,8 +68,8 @@ class SomeReusableOperator(bpy.types.Operator):
 # in your ui layout draw code somewhere
 
     callback = "wm.some_reusable_op"
-    col.operator(callback, text='function one').fn_name = 'function one'
-    col.operator(callback, text='function two').fn_name = 'function two'
-    col.operator(callback, text='function three').fn_name = 'function three'
+    col.operator(callback, text='function one').fn_name = 'function_one'
+    col.operator(callback, text='function two').fn_name = 'function_two'
+    col.operator(callback, text='function three').fn_name = 'function_three'
 
 ```

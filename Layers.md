@@ -15,7 +15,8 @@ You can write it more Pythonic
 
 ```
 
-
+**Moving objects from one layer to another**  
+  
 Moving objects that appear in one range of layers, to another range.
 
 ```python

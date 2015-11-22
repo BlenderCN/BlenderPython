@@ -1,3 +1,20 @@
+** Layers - how to set**
+
+instead of writing 
+```python
+.....,layers=[True, False, False ..........False])
+```
+You can write it more Pythonic
+```python
+# if you want the object on 1 layer
+.....,layers=[i in {0} for i in range(20)]
+
+# if you want the object on multiple layers
+.....,layers=[i in {0,1,4,12} for i in range(20)]
+>>> [i in {0,1,4,12} for i in range(20)]
+```
+
+
 Moving objects that appear in one range of layers, to another range.
 
 ```python

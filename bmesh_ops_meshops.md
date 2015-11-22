@@ -120,7 +120,7 @@ cent = obj.location
 lathe_geometry(bm, cent, axis, dvec, angle, steps, remove_doubles=True, dist=0.0001)
 
 bm.to_mesh(obj.data)
-obj.data.update()
+obj.data.update()   # <--- not strictly needed, Blender will update itself if you click somewhere
 bm.free()
 ```
 ![image spin](https://cloud.githubusercontent.com/assets/619340/11323690/afde11f6-9119-11e5-95de-6e57bb4c71c3.png)

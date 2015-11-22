@@ -2,6 +2,8 @@
   
 bmesh.ops [docs have a few good examples](http://www.blender.org/api/blender_python_api_current/bmesh.ops.html?highlight=bmesh.ops#module-bmesh.ops) which are recommended reading. Additionally _TextEditor > Templates > Python_ has two _Bmesh Simple_ templates that show how to get the bmesh representation of an Object's mesh (both in edit mode and object mode). 
 
+### Example 1 Recal Normals  
+
 If you need to see them in context think about the following case. You have a bmesh generated procedurally and can't guarantee the direction of the faces (they might be pointing outwards or inwards depending on the order in which you specify the vertex indices for each face).
   
 This shows how to:
@@ -57,3 +59,24 @@ make_object('my_cube', verts, faces)
 
 The extra bmesh operation is what recalculates the face normals. This does a good job of making the face directions consistent with surrounding faces. 
 
+### Example 2 Doubles and Normals (chained bmesh.ops)
+
+```python
+import bpy
+import bmesh
+
+for obj in bpy.context.selected_objects:
+
+    bm = bmesh.new()   # create an empty BMesh
+    bm.from_mesh(obj.data)   # fill it in from a Mesh
+
+    d = 0.0001
+    bm_verts = bm.verts[:]
+    bmesh.ops.remove_doubles(bm, verts=bm_verts, dist=d)
+
+    bm_faces = bm.faces[:]
+    bmesh.ops.recalc_face_normals(bm, faces=bm_faces)
+
+    bm.to_mesh(obj.data)
+    bm.free()
+```

@@ -4,3 +4,5 @@ Keyframing is a massive topic. I fear not everything can be covered explicitly, 
 -  keyframe object properties (like location, scale, rotation, hide_render)  
 -  keyframe mesh content (move vertices by keyframe)  
 -  keyframe miscellaneous  
+
+mention constant interpolation (this avoids the need to place a before and after keyframe)

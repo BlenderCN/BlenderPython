@@ -6,7 +6,7 @@ Objects / Mesh / BMesh
 - [Mesh](Mesh)  
 - [Bmesh](BMesh)  
 - [bmesh.ops - primitives](bmesh_ops_primitives)  
-- [bmesh.ops - mesh ops](bmesh_ops_meshops):lock:  
+- [bmesh.ops - mesh ops](bmesh_ops_meshops):wrench:  
 - [Curves (2d, 3d)](Curves)  
 - [Text (Font Objects)](Text)  
 - [Duplication (instancing)](Duplication)  

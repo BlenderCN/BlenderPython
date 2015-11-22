@@ -22,7 +22,7 @@ Scripting the generation of a Cycles node tree is quite easy. The only thing I f
 
 Luckily there's a small [addon by JuhaW called NodeArrange](https://github.com/JuhaW/NodeArrange) that is able to spread the nodes out in a tree form.
 
-```
+```python
 import bpy
 
 import addon_utils

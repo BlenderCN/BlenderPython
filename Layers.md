@@ -11,7 +11,8 @@ You can write it more Pythonic
 
 # if you want the object on multiple layers
 .....,layers=[i in {0,1,4,12} for i in range(20)]
->>> [i in {0,1,4,12} for i in range(20)]
+>>> [True, True, False, False, True, False, False, ...., True, ....False, False]
+
 ```
 
 

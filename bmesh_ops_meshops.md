@@ -111,7 +111,7 @@ obj = bpy.data.objects['Graph']
 bm = bmesh.new()
 bm.from_mesh(obj.data)
 
-axis = (1,0,0)
+axis = (0,0,1)
 dvec = (0,0,0)
 angle = 2*math.pi
 steps = 20
@@ -120,5 +120,6 @@ cent = obj.location
 lathe_geometry(bm, cent, axis, dvec, angle, steps, remove_doubles=True, dist=0.0001)
 
 bm.to_mesh(obj.data)
+obj.data.update()
 bm.free()
 ```

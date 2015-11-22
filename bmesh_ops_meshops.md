@@ -1,3 +1,52 @@
 `bmesh.ops` brings a lot of convenience and power to the scripter. All `bmesh.ops` can found in the current API  docs: [blender.org/api/blender_python_api_current/search.html?q=bmesh.ops](http://www.blender.org/api/blender_python_api_current/search.html?q=bmesh.ops)
   
-<script src="https://gist.github.com/zeffii/3392c986dd759b8f3ddf.js"></script>
+bmesh.ops docs have a few good examples, and _TextEditor > Templates > Python_ has two _Bmesh Simple_ templates that show how to get the bmesh representation of an Object's mesh (both in edit mode and object mode). 
+
+If you need to see them in context think about the following case. You have a bmesh generated procedurally and can't guarantee the direction of the faces (they might be pointing outwards or inwards depending on the order in which you specify the vertex indices for each face).
+
+```python
+import bpy
+import bmesh
+
+verts = [
+    (1.0, 1.0, -1.0),
+    (1.0, -1.0, -1.0),
+    (-1.0, -1.0, -1.0),
+    (-1.0, 1.0, -1.0),
+    (1.0, 1.0, 1.0),
+    (1.0, -1.0, 1.0),
+    (-1.0, -1.0, 1.0),
+    (-1.0, 1.0, 1.0)]
+
+faces = [
+    (0, 1, 2, 3),
+    (4, 5, 6, 7),  # reversed
+    (0, 4, 5, 1),
+    (1, 5, 6, 2),
+    (2, 6, 7, 3),
+    (4, 0, 3, 7)]
+
+def make_object(name, verts, faces, normal_recalc=True):
+
+    scn = bpy.context.scene
+
+    mesh = bpy.data.meshes.new(name + "_Mesh")
+    mesh.from_pydata(verts, [], faces) 
+    mesh.update()
+
+    if normal_recalc:
+        bm = bmesh.new()
+        bm.from_mesh(mesh)
+        bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+        bm.to_mesh(mesh)
+        bm.free()
+
+    ob = bpy.data.objects.new(name, mesh)
+    scn.objects.link(ob)
+
+make_object('my_cube', verts, faces)
+# make_object(name, verts, faces, normal_recalc=False)
+```
+
+
+

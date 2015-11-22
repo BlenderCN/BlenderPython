@@ -13,9 +13,11 @@ todo
 
 ### Nodes
 
-Scripting the generation of a Cycles node tree is quite easy. The only thing I find moderately annoying is also passing the locations of the nodes (if you don't pass locations all nodes are added to (x=0, y=0)). 
+Scripting a Cycles node tree is quite easy. The only thing I find moderately annoying about it is that if I want the node tree to be user-ready (spread out a little) then I must pass the locations of the nodes explicitly. If you don't pass locations all nodes are added to `(x=0, y=0)`. You might not care, and if you don't expect any user interaction with the nodes then you certainly don't need to add locations.
 
-
+```python
+todo
+```
 
 
 **NodeArrange to the rescue**  

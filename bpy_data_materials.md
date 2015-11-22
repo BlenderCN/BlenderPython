@@ -54,11 +54,11 @@ links.new(bsdf2.outputs[0], mixer1.inputs[2])
 links.new(mixer1.outputs[0], material_out.inputs[0])
 
 bpy.ops.node.arrange_nodetree(mat_name=material_name)
-or even
 
-#bpy.ops.node.arrange_nodetree(
-#  mat_name=material_name, margin_x=140, margin_y=120
-#)
+# -- or even --
+# bpy.ops.node.arrange_nodetree(
+#   mat_name=material_name, margin_x=140, margin_y=120
+# )
 ```
 
 ### No Nodes

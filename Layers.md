@@ -2,7 +2,7 @@
 
 instead of writing 
 ```python
-.....,layers=[True, False, False ..........False])
+.....,layers=[True, False, False ..........False]
 ```
 You can write it more Pythonic
 ```python

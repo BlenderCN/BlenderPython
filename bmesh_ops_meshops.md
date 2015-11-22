@@ -3,6 +3,13 @@
 bmesh.ops docs have a few good examples, and _TextEditor > Templates > Python_ has two _Bmesh Simple_ templates that show how to get the bmesh representation of an Object's mesh (both in edit mode and object mode). 
 
 If you need to see them in context think about the following case. You have a bmesh generated procedurally and can't guarantee the direction of the faces (they might be pointing outwards or inwards depending on the order in which you specify the vertex indices for each face).
+  
+This shows how to:
+  
+1. Mesh to bmesh (bm) 
+2. using bmesh.ops on the bm, 
+3. pushing the bm back to the Mesh.
+
 
 ```python
 import bpy
@@ -48,5 +55,5 @@ make_object('my_cube', verts, faces)
 # make_object(name, verts, faces, normal_recalc=False)
 ```
 
-
+The extra bmesh operation is what recalculates the face normals. This does a good job of making the face directions consistent with surrounding faces. 
 

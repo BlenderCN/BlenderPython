@@ -123,4 +123,6 @@ bm.to_mesh(obj.data)
 obj.data.update()   # <--- not strictly needed, Blender will update itself often anyway.
 bm.free()
 ```
+In the code I reference a Mesh object called 'Graph'. The name is arbitrary, the function of the mesh is to act as the spin profile. In other applications this is called 'Lathe'.
+
 ![image spin](https://cloud.githubusercontent.com/assets/619340/11323690/afde11f6-9119-11e5-95de-6e57bb4c71c3.png)

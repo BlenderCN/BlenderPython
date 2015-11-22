@@ -1,1 +1,1 @@
-`bmesh.ops` brings a lot of convenience and power to the scripter.
+`bmesh.ops` brings a lot of convenience and power to the scripter. The current full list of `bmesh.ops` can found in the current api docs: [blender.org/api/blender_python_api_current/search.html?q=bmesh.ops](http://www.blender.org/api/blender_python_api_current/search.html?q=bmesh.ops)

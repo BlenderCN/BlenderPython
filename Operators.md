@@ -2,7 +2,7 @@ When I try to think back to my earliest ventures in bpy programming, Operators s
   
 If you don't know much about Python Classes [take the tour here](http://www.learnpython.org/en/Classes_and_Objects), then continue on below
   
-Following that it's worth reading the code of a few add-ons that you have used, that way you'll have an idea of the functionality and see a relationship with how the code is structured to process your input. I also encourage you to read as much code in the `/addons` directory as you can stomach, you'll soon become familiar with the patterns and see conventions emerge. The [bpy docs also cover](http://www.blender.org/api/blender_python_api_current/info_quickstart.html?highlight=operator) the various forms of `Operators` in some detail - bookmark that.  
+Following that it's worth reading the code of a few add-ons that you have used, that way you'll be able to make connections between how it processes user input into actions. I also encourage you to read as much code in the `/addons` directory as you can stomach, you'll soon become familiar with the patterns and see conventions emerge. The [bpy docs also cover](http://www.blender.org/api/blender_python_api_current/info_quickstart.html?highlight=operator) the various forms of `Operators` in some detail - bookmark that.  
 
 After writing several add-ons I decided to create small templates / snippets for my day-to-day editor SublimeText. Here you'll find a few useful [autocomplete snippets](https://github.com/zeffii/BlenderSublimeSnippets). This helps me get from idea to code faster than loading up Blender's TextEditor Templates.
   

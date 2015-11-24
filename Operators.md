@@ -1,4 +1,4 @@
-When I try to think back to my earliest ventures in bpy programming, Operators took a while to understand because I avoided learning about Python's Classes for a long time. An Operator is a form of Class which you will understand much better by learning about how Python's Classes work. Invest time in them and bpy Operators will prove much easier.
+When I try to think back to my earliest ventures in bpy programming, Operators stand out as a sticking point. They took a while to understand because I avoided learning about Python's Classes for a long time. An Operator is a form of Class which you will understand much better by learning about how Python's Classes work. Invest time in them and bpy Operators will prove much easier.
   
 If you don't know much about Python Classes [take the tour here](http://www.learnpython.org/en/Classes_and_Objects), then continue on below
   

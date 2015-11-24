@@ -1,3 +1,7 @@
+When I try to think back to my earliest ventures in bpy programming, Operators took a while to understand because I avoided learning about Python's Classes for a long time. An Operator is a form of Class which you will understand much better by learning about how Python's Classes work. Invest time in them and bpy Operators will prove much easier.
+  
+If you don't know much about Python Classes [take the tour here](http://www.learnpython.org/en/Classes_and_Objects), then continue on below
+  
 Most of the useful information about Operators can be acquired by taking your time to read through the add-on list. It's how I learnt it. My favorite snippets i've worked into a [sublime text editor autocomplete snippet set](https://github.com/zeffii/BlenderSublimeSnippets). The [bpy docs also cover](http://www.blender.org/api/blender_python_api_current/info_quickstart.html?highlight=operator) the various forms of `Operators` in some detail.  
 
 More operator Tricks:

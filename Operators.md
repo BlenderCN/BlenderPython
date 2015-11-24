@@ -1,4 +1,4 @@
-When I try to think back to my earliest ventures in bpy programming, Operators stand out as a sticking point. They took a while to understand because I avoided learning about Python's Classes for a long time. Once I had a working knowledge of Python's Classes `bpy` Operators become a walk in the park.
+When I try to think back to my earliest ventures in bpy programming, Operators stand out as a sticking point. They took a while to understand because I avoided learning about Python's Classes for a long time. Once I had a working knowledge of Python's Classes `bpy` Operators became a walk in the park.
   
 If you don't know much about Python Classes [take the tour here](http://www.learnpython.org/en/Classes_and_Objects), then continue on below
   

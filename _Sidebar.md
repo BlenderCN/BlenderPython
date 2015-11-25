@@ -42,6 +42,7 @@ Miscellaneous
   
 Add-ons  
 
+- [introduction](Addons_Introduction):lock:  
 - [import / export](IO):lock:  
 - [Text Editor](TextEditor):lock:  
 - [Custom Nodes](CustomNodes):lock:  

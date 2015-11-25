@@ -33,7 +33,7 @@ def generate_gp3d_stroke(layer):
     layer.show_points = True
     layer.color = (0.2, 0.90, .2)
     s = layer.frames[0].strokes.new()
-    s.draw_mode = '3DSPACE'
+    s.draw_mode = '3DSPACE'  # or '2DSPACE'
 
     chain = []
     num_verts = 10
@@ -47,6 +47,7 @@ def generate_gp3d_stroke(layer):
     s.points.add(len(chain))
     for idx, p in enumerate(chain):
         s.points[idx].co = p
+        # s.points[idx].pressure = 1.0   # if 2DSPACE
 
 
 class TrigGenerator(bpy.types.Operator):

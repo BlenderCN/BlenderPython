@@ -1,4 +1,4 @@
-`bmesh.ops` brings a lot of convenience and power to the scripter. All `bmesh.ops` can found in the current API  docs: [blender.org/api/blender_python_api_current/search.html?q=bmesh.ops](http://www.blender.org/api/blender_python_api_current/search.html?q=bmesh.ops)
+`bmesh.ops` brings a lot of convenience and power to the scripter. All `bmesh.ops` are found in the current API  docs: [blender.org/api/blender_python_api_current/search.html?q=bmesh.ops](http://www.blender.org/api/blender_python_api_current/search.html?q=bmesh.ops)
   
 bmesh.ops [docs have a few good examples](http://www.blender.org/api/blender_python_api_current/bmesh.ops.html?highlight=bmesh.ops#module-bmesh.ops) which are recommended reading. Additionally _TextEditor > Templates > Python_ has two _Bmesh Simple_ templates that show how to get the bmesh representation of an Object's mesh (both in edit mode and object mode). 
 

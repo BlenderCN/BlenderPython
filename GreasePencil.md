@@ -129,5 +129,8 @@ def main():
 main()
 ```
 
-A small change should be to trianglulate or Quad the mesh first. ..
+A way to get the font work is to trianglulate or Quad the mesh first. ..
+
+![image](https://cloud.githubusercontent.com/assets/619340/11423648/83f36c28-9446-11e5-9e65-a8c6c59f693c.png)
+
 

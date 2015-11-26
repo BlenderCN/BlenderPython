@@ -78,7 +78,9 @@ if __name__ == '__main__':
     register()
 ```
 
-### Font to grease pencil. Note, this fails a little bit (at present) because the polygons are filled using triangle fan, they aren't ngons like in bmesh.
+### Font to grease pencil.
+
+Note, this fails a little bit (at present) because the polygons are filled using triangle fan, they aren't ngons like in bmesh.
 
 ```python
 import bpy

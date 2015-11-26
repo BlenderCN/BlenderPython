@@ -80,7 +80,7 @@ if __name__ == '__main__':
 
 ### Font to grease pencil.
 
-Note, this fails a little bit (at present) because the polygons are filled using triangle fan, they aren't ngons like in bmesh.
+Font must be converted to Mesh first. Ideally we'd use Ngons to keep the number of strokes down, but GP fills  polygons using the Fan method and this doesn't treat irregular concave polygons very well. A way to get the font to display in a usable way is to  triangulate or Quad the mesh first. .. then run the script. (or include this as an automated step in the script)
 
 ```python
 import bpy
@@ -128,8 +128,6 @@ def main():
 
 main()
 ```
-
-A way to get the font work is to trianglulate or Quad the mesh first. ..
 
 ![image](https://cloud.githubusercontent.com/assets/619340/11423648/83f36c28-9446-11e5-9e65-a8c6c59f693c.png)
 

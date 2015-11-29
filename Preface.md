@@ -8,7 +8,7 @@ I might think of more things to say here at a later point but for now I want to 
 
 This wiki is intended to be only part of the learning process. If you already master Python I recommend going straight to [finding the docs](Preface#finding-docs) below. If that's not you and you don't know your way around Python's standard library then please do read on. 
 
-I've included a section in the Introduction called [General Python Snippets](GeneralPythonSnippets), this covers some of the most important parts of Python that you want to nail before doing any Blender scripting. My Blender recipes assume you know a subset of Python, [General Python Snippets](GeneralPythonSnippets) is that subset.
+I've included a section in the Introduction called [General Python Snippets](GeneralPythonSnippets), it covers the most important parts of Python that you need to be comfortable with before doing any Blender scripting. The rest of the _Blender Recipes_ on this wiki assume you know that subset of Python.
 
 (insert section here)  
   

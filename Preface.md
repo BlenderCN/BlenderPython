@@ -2,7 +2,7 @@ Welcome to this wiki/repository of Blender related python snippets.
 
 ### First let's get the elephant out of the room
 
-I might think of more things to say here at a later point but for now I want to stress that all this code is [licensed GPL3](). What does that mean? It means I would appreciate when you copy my code verbatim or (large sections) that you include the GPL3 license prominently in your add-on if you distribute it to others. I won't be bothered if you choose to ignore the licensing, but it's a politeness and people might call you out on it.
+I might think of more things to say here at a later point but for now I want to stress that all this code is [licensed GPL3](http://www.gnu.org/licenses/gpl-3.0.en.html). What does that mean? It means I would appreciate when you copy my code verbatim or (large sections) that you include the GPL3 license prominently in your add-on if you distribute it to others. I won't be bothered if you choose to ignore the licensing, but it's a politeness and people might call you out on it.
 
 ### OK. I get it, let's rock!
 

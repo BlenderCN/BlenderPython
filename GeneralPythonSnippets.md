@@ -1,4 +1,4 @@
-This is a crash course in the Python subset. If you master these you will be a decent Python coder. 
+This is a crash course in the Python subset. If you already master these you should not waste time reading this, unless you want to check for typos or factual inaccuracies. 
 
 ```text
 [ ] print

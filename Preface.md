@@ -12,9 +12,9 @@ I've included a section in the Introduction called [General Python Snippets](Gen
 
 (insert section here)  
   
-I can show you endless examples of how to do things, but eventually you need to 'close the book' and get acquainted with the process of finding documentation and experimenting with Python and Blender's API till you find a workflow that works for you.
-
 ### Finding docs
+
+I can show you endless examples of how to do things, but eventually you need to 'close the book' and get acquainted with the process of finding documentation and experimenting with Python and Blender's API till you find a workflow that works for you.
 
 In 2015 we got version independent docs:
 

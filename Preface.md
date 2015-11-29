@@ -2,6 +2,10 @@ Welcome to this wiki/repository of Blender related python snippets. I might thin
 
 ###Finding docs
 
-Well, in November 2015 we got version independent docs:
+In 2015 we got version independent docs:
+
+    http://www.blender.org/api/blender_python_api_current/ 
+    http://www.blender.org/api/blender_python_api_current/search.html?q=bmesh 
+    http://www.blender.org/api/blender_python_api_current/mathutils.geometry.html 
 
 I found the process of finding docs was a little slow so I coded an addon that uses Blender's Python console to execute non-python commands (Ctrl+Enter vs Enter). 

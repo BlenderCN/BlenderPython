@@ -6,7 +6,11 @@ I might think of more things to say here at a later point but for now I want to 
 
 ### OK. I get it, let's rock!
 
-This wiki is intended to be only part of the learning process. If you already master Python I recommend going straight to [finding the docs](Preface#finding-docs) below. I can show you endless examples of how to do things, but eventually you need to 'close the book' and get acquainted with the process of finding documentation and experimenting with Blender's python console till you find a workflow that works for you.
+This wiki is intended to be only part of the learning process. If you already master Python I recommend going straight to [finding the docs](Preface#finding-docs) below. If that's not you and you don't know your way around Python's standard library then please do read on. 
+
+(insert section here)  
+  
+I can show you endless examples of how to do things, but eventually you need to 'close the book' and get acquainted with the process of finding documentation and experimenting with Python and Blender's API till you find a workflow that works for you.
 
 ### Finding docs
 

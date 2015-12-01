@@ -10,7 +10,9 @@ This is a crash course in the Python subset. If you already master these you sho
 - [boolean](GeneralPythonSnippets#boolean)
 - [if statements](GeneralPythonSnippets#if-statements)
 - [standard library](GeneralPythonSnippets#standard-library)
+
 ----------------------------
+
 - [string manipulation](GeneralPythonSnippets#string-manipulation)
 - [for loop](GeneralPythonSnippets#for-loop)
 - [list comprehensions](GeneralPythonSnippets#list-comprehensions)
@@ -20,5 +22,7 @@ This is a crash course in the Python subset. If you already master these you sho
 - [functions](GeneralPythonSnippets#functions)
 - [import libraries](GeneralPythonSnippets#import-libraries)
 - [classes](GeneralPythonSnippets#classes)
+
 ----------------------------
+
 - [decorators](GeneralPythonSnippets#decorators)

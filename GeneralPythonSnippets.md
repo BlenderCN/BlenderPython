@@ -46,13 +46,13 @@ You might also see scientific notation for small numbers namely `2e-7` which is 
 ###string
 
 The words you read right now are strings. In Python we express strings by wrapping them in single qoutes, double qoutes or tripple qoutes.
-```
+```python
 >>> my_first_string = "I am a HAL 9000 computer"
 >>> my_second_string = 'I am a HAL 9000 computer'
 >>> my_third_string = """I am a HAL 9000 computer"""
 ```
 You can add strings together:
-```
+```python
 # notice the spaces at the end of string, why is that?
 >>> var1 = "I am a "  
 >>> var2 = "HAL "

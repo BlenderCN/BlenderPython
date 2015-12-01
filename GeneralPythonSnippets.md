@@ -102,11 +102,11 @@ A tuple is _immutable_. This means you can not change any of the members of the 
 ... ('I am a ', 'HAL ', '9000 computer')
 >>> var2 = 'SAL '
 >>> var4
-('I am a ', 'HAL ', '9000 computer')    
+... ('I am a ', 'HAL ', '9000 computer')    
 ```
 To change a tuple you must assign a new tuple by overwriting the tuple stored in `var4`.
 ```python
 >>> var4 = (var1, var2, var3)
 >>> var4
-('I am a ', 'SAL ', '9000 computer')
+... ('I am a ', 'SAL ', '9000 computer')
 ```

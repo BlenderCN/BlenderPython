@@ -10,7 +10,7 @@ This wiki is intended to be only part of the learning process. If you already ma
 
 I've included a section in the Introduction called [General Python Snippets](GeneralPythonSnippets), it covers the most important parts of Python that you need to be comfortable with before doing any Blender scripting. The rest of the _Blender Recipes_ on this wiki assume you know that subset of Python.
 
-(insert section here)  
+These snippets don't go into details about every line of code. The code hopefully explains itself by having clear variable names and a logical order of execution. I break code out into functions whenever possible to show that certain parts of code are cohesive blocks. I tend mostly to comment on larger parts of the code or those lines that are a little un-intuitive for a beginner.  
   
 ### Finding docs
 

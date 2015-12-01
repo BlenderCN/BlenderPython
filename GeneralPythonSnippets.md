@@ -74,7 +74,7 @@ Further _string manipulation_ is discussed at a later stage. Strings are used a 
 
 ###tuple
 
-This is a data type which is used to collect data. You'll see a tuple defined in various ways.
+This is a data type which is used to collect data, it holds any kind of data you want. You'll see a tuple defined in various ways.
 
 ```python
 >>> some_number = 20
@@ -109,4 +109,14 @@ To change a tuple you must assign a new tuple by overwriting the tuple stored in
 >>> var4 = (var1, var2, var3)
 >>> var4
 ... ('I am a ', 'SAL ', '9000 computer')
+```
+If you find the need to update members of a collection you might want to use a `List` instead.
+
+###list
+
+Lists are a very big topic, but you don't need to know much about them to do useful things. Lists are like tuples but with a few imortant differences. Firstly notation, lists use square brackets `[ ]` to enclose their data.
+```python
+>>> my_list = [0, 1, 2, 30, 34]
+>>> my_other_list = [0.9, 1, 2, "30", "thirty nine"]
+
 ```

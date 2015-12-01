@@ -118,9 +118,22 @@ If you find the need to update members of a collection you might want to use a `
 
 ###list
 
-Lists are a very big topic, but you don't need to know much about them to do useful things. Lists are like tuples but with a few important differences. Firstly notation, lists use square brackets `[ ]` to enclose their data.
+Lists are a very big topic, but you don't need to know much about them to do useful things. Lists are like tuples but with a few important differences. Firstly notation, lists use square brackets `[ ]` to enclose their data. These are _not optional_ as they are with tuples.
 ```python
 >>> my_list = [0, 1, 2, 30, 34]
 >>> my_other_list = [0.9, 1, 2, "30", "thirty nine"]
+```
+lists are mutable, you can change the content of lists without assigning a new list to the variable. A list's _elements_ are also called _members_. I'll use the two terms interchangeably. ( more info about indexing...)
+```python
+>>> my_new_list = [30, 40, 50]
+>>> my_new_list[0] = 'First Element Changed'
+>>> my_new_list
+... ['First Element Changed', 40, 50]
+```
 
+**nested lists**
+```python
+>>> my_nested_list = [20, 30, my_list]
+>>> my_nested_list
+[20, 30, [0, 1, 2, 30, 34]]
 ```

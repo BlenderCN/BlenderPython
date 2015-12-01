@@ -20,9 +20,11 @@ This is a crash course in the Python subset. If you already master these you sho
 
 ###print
 
-An important way to debug your code, it doesn't discriminate between beginners and pros. While you learn Python `print()` is your friend.
+An important way to debug your code, it doesn't discriminate between beginners and pros. While you learn Python `print()` is your friend. It will try to display whatever is between the parenthesis `( )`.
 
 ```python
 >>> print("Hello apprentice")
 ...Hello apprentice
 ```
+
+I'll return to `print()` frequently on this page to show how to display information that you will find helpful while coding.

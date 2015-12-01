@@ -69,3 +69,5 @@ to convert a non string to a string is done explicitly using `str()`:
 >>> "Hal " + str(some_number) 
 ..."Hal 9000"`
 ```
+
+Further _string manipulation_ is discussed at a later stage.

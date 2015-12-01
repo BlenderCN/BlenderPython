@@ -31,5 +31,10 @@ I'll return to `print()` frequently on this page to show how to display informat
 
 ###integer
 
-whole numbers
-
+whole numbers, positive or negative
+```python
+# let's make a variable called hal
+>>> hal = 9000
+>>> print(hal)
+...9000
+```

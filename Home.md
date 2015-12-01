@@ -21,5 +21,3 @@ Some of these snippets are written for one off projects, others are taken from c
 
 **Contribute?**  
 I have no interest in doing this alone. Make a new issue about a topic if you think it can be augmented with more information. Content will not be included without consent of whoever wrote the code, I will assume any contributors have the right to submit code, submissions found to ignore this request will be rewritten or removed.
-
-### All code in the wiki is licensed GPL3.

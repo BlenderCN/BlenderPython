@@ -2,13 +2,11 @@ Welcome to this wiki/repository of Blender related python snippets.
 
 ### First let's get the elephant out of the room
 
-Are you free to use the code in this wiki for your own projects? Yes. My goal is to show working examples of the  current Blender Python API.
+Are you free to use the code in this wiki for your own projects? Yes. My goal is to show working examples of the  current Blender Python API. This wiki is intended to be only part of the learning process. If you already master Python I recommend going straight to [finding the docs](Preface#finding-docs) below. If that's not you and you don't know your way around Python's standard library then please do read on. 
 
 ### OK. I get it, let's rock!
 
 > Teachers open the door, but you must enter by yourself.  
-
-This wiki is intended to be only part of the learning process. If you already master Python I recommend going straight to [finding the docs](Preface#finding-docs) below. If that's not you and you don't know your way around Python's standard library then please do read on. 
 
 I've included a section in the Introduction called [General Python Snippets](GeneralPythonSnippets), it covers the most important parts of Python that you need to be comfortable with before doing any Blender scripting. The rest of the _Blender Recipes_ on this wiki assume you know that subset of Python.
 

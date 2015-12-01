@@ -70,4 +70,19 @@ to convert a non string to a string is done explicitly using `str()`:
 ..."Hal 9000"`
 ```
 
-Further _string manipulation_ is discussed at a later stage.
+Further _string manipulation_ is discussed at a later stage. Strings are used a lot in Python, but in Blender they're commonly used to name objects, data, or set the properties of data.
+
+###tuple
+
+This is a data type which is used to collect data. You might a tuple defined in various ways.
+
+```python
+>>> some_number = 20
+>>> tuple_one = ('some_string', some_number, 0.3444)
+... ('some_string', 20, 0.3444)
+# but it's OK to drop the closing parenthesis, the comma separator is most important
+>>> tuple_two = 'some_string', some_number, 0.3444
+... ('some_string', 20, 0.3444)
+# you'll also see it written this way, but it is not common.
+>>> tuple_one = tuple(['some_string', some_number, 0.3444])
+

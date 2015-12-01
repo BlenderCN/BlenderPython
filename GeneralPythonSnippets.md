@@ -62,3 +62,10 @@ You can add strings together, we call it 'concatenation':
 >>> print(var1 + var2 + var3)
 ...I am a HAL 9000 computer
 ```
+
+to convert a non string to a string is done explicitly using `str()`:
+```python
+>>> some_number = 9000
+>>> "Hal " + str(some_number) 
+..."Hal 9000"`
+```

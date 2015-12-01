@@ -40,5 +40,5 @@ Whole numbers, positive or negative. You'll see plenty of these as you progress.
 ```
 ###float
 
-Numbers like these `100.0`, `0.0000003` and `34.4`. etc. You will often see unusual floats like '0.00200023423` when you expect to see just `0.002`, this is normal and will be explained later.  
+Numbers like these `100.0`, `0.0000003` and `34.4`. etc. You will often see unusual floats like `0.00200023423` when you expect to see just `0.002`, this is normal and will be explained later.  
 You might also see scientific notation for small numbers namely `2e-7` which is equivalent to `0.0000002`

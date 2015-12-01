@@ -37,4 +37,10 @@ whole numbers, positive or negative
 >>> hal = 9000
 >>> print(hal)
 ...9000
+
+>>> print('IQ of 6000 PE teachers: 6000')
+```'IQ of 6000 PE teachers: 6000'
+
+>>> some_number = 6000
+>>> print('IQ of {0} PE teachers: {0}'.format(some_number))
 ```

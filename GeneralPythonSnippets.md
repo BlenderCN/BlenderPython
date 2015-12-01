@@ -1,24 +1,24 @@
 This is a crash course in the Python subset. If you already master these you should not waste time reading this, unless you want to check for typos or factual inaccuracies. 
 
-- [ ] print
-- [ ] integer
-- [ ] float
-[ ] string
-[ ] tuple
-[ ] list
-[ ] dictionary
-[ ] boolean
-[ ] if statements
-[ ] standard library
+- [print](GeneralPythonSnippets#print)
+- [integer](GeneralPythonSnippets#integer)
+- [float](GeneralPythonSnippets#float)
+- [string](GeneralPythonSnippets#string)
+- [tuple](GeneralPythonSnippets#tuple)
+- [list](GeneralPythonSnippets#list)
+- [dictionary](GeneralPythonSnippets#dictionary)
+- [boolean](GeneralPythonSnippets#boolean)
+- [if statements](GeneralPythonSnippets#if-statements)
+- [standard library](GeneralPythonSnippets#standard-library)
 ----------------------------
-[ ] string manipulation
-[ ] for loop
-[ ] list comprehensions
-[ ] while loop
-[ ] flow control
-[ ] try except
-[ ] functions
-[ ] import libraries
-[ ] classes
+- [string manipulation](GeneralPythonSnippets#string-manipulation)
+- [for loop](GeneralPythonSnippets#for-loop)
+- [list comprehensions](GeneralPythonSnippets#list-comprehensions)
+- [while loop](GeneralPythonSnippets#while-loop)
+- [flow control](GeneralPythonSnippets#flow-control)
+- [try except](GeneralPythonSnippets#try-except)
+- [functions](GeneralPythonSnippets#functions)
+- [import libraries](GeneralPythonSnippets#import-libraries)
+- [classes](GeneralPythonSnippets#classes)
 ----------------------------
-[ ] decorators
+- [decorators](GeneralPythonSnippets#decorators)

@@ -123,7 +123,17 @@ Lists are a very big topic, but you don't need to know much about them to do use
 >>> my_list = [0, 1, 2, 30, 34]
 >>> my_other_list = [0.9, 1, 2, "30", "thirty nine"]
 ```
-lists are mutable, you can change the content of lists without assigning a new list to the variable. A list's _elements_ are also called _members_. I'll use the two terms interchangeably. ( more info about indexing...)
+lists are mutable, you can change the content of lists without assigning a new list to the variable. A list's _elements_ are also called _members_. I'll use the two terms interchangeably. You can tell Python which element to change by using the element index. First element has index 0 (zero), the second element has index 1 (one). etc...the Tenth element has index 9 (nine). Why the off by one difference? -- because elements or indexed starting from 0, this is called 'zero indexing'. Most programming languages do it this way. It's a convention, you'll make mistakes -- we all make off by one mistakes at some point.
+
+To tell Python that you want to use or modify an element you use the bracket notation.
+
+```python
+>>> some_list = [30, 40, 20]
+>>> some_list[1]  # lets look up the second element, it has index 1.
+... 40
+```
+how about changing the value stored in an element? easy!
+
 ```python
 >>> my_new_list = [30, 40, 50]
 >>> my_new_list[0] = 'First Element Changed'
@@ -132,8 +142,12 @@ lists are mutable, you can change the content of lists without assigning a new l
 ```
 
 **nested lists**
+
+It's not uncommon to have nested lists, or Multi-Dimensional lists.
+
 ```python
 >>> my_nested_list = [20, 30, my_list]
 >>> my_nested_list
 [20, 30, [0, 1, 2, 30, 34]]
+>>> multi_dim_list = [[1.0, 0.1, 2.0], [0.2, 1.0, 0.3], [1.0, 0.3, 1.0], [0.2, 0.3, 1.0]]
 ```

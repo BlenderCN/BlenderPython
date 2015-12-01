@@ -108,5 +108,5 @@ To change a tuple you must assign a new tuple by overwriting the tuple stored in
 ```python
 >>> var4 = (var1, var2, var3)
 >>> var4
-('I am a ', 'SAL', '9000 computer')
+('I am a ', 'SAL ', '9000 computer')
 ```

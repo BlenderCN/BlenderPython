@@ -81,7 +81,7 @@ This is a data type which is used to collect data. You'll see a tuple defined in
 >>> tuple_one = ('some_string', some_number, 0.3444)
 ... ('some_string', 20, 0.3444)
 ```
-but it's OK to drop the closing parenthesis, the comma separator is most important
+but it's OK to drop the surrounding parenthesis, the comma separator is most important
 ```python
 >>> tuple_two = 'some_string', some_number, 0.3444
 ... ('some_string', 20, 0.3444)

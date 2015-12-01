@@ -42,3 +42,21 @@ Whole numbers, positive or negative. You'll see plenty of these as you progress.
 
 Numbers like these `100.0`, `0.0000003` and `34.4`. etc. You will often see unusual floats like `0.00200023423` when you expect to see just `0.002`, this is normal and will be explained later.  
 You might also see scientific notation for small numbers namely `2e-7` which is equivalent to `0.0000002`
+
+###string
+
+The words you read right now are strings. In Python we express strings by wrapping them in single qoutes, double qoutes or tripple qoutes.
+```
+>>> my_first_string = "I am a HAL 9000 computer"
+>>> my_second_string = 'I am a HAL 9000 computer'
+>>> my_third_string = """I am a HAL 9000 computer"""
+```
+You can add strings together:
+```
+# notice the spaces at the end of string, why is that?
+>>> var1 = "I am a "  
+>>> var2 = "HAL "
+>>> var3 = "9000 computer"
+>>> print(var1 + var2 + var3)
+...I am a HAL 9000 computer
+```

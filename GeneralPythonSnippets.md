@@ -20,7 +20,7 @@ This is a crash course in the Python subset. If you already master these you sho
 
 ###print
 
-An important way to debug your code, it doesn't discriminate between beginners and pros. While you learn Python print is your friend.
+An important way to debug your code, it doesn't discriminate between beginners and pros. While you learn Python `print()` is your friend.
 
 ```python
 >>> print("Hello apprentice")

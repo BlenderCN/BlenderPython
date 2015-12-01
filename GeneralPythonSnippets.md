@@ -13,3 +13,16 @@ This is a crash course in the Python subset. If you already master these you sho
 | [if statements](GeneralPythonSnippets#if-statements) | [classes](GeneralPythonSnippets#classes) |  |
 | [standard library](GeneralPythonSnippets#standard-library) |  |  |
 
+### How to run this code  
+
+(elaborate) : Open Blender, and get a Python console view open. You'll notice `>>>` , this is a prompt waiting for you to type stuff. What we'll be doing below is type stuff after the prompt, then hit Enter to run it.
+
+
+###print
+
+An important way to debug your code, it doesn't discriminate between beginners and pros. While you learn Python print is your friend.
+
+```python
+>>> print("Hello apprentice")
+...Hello apprentice
+```

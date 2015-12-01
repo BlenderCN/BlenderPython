@@ -114,7 +114,7 @@ If you find the need to update members of a collection you might want to use a `
 
 ###list
 
-Lists are a very big topic, but you don't need to know much about them to do useful things. Lists are like tuples but with a few imortant differences. Firstly notation, lists use square brackets `[ ]` to enclose their data.
+Lists are a very big topic, but you don't need to know much about them to do useful things. Lists are like tuples but with a few important differences. Firstly notation, lists use square brackets `[ ]` to enclose their data.
 ```python
 >>> my_list = [0, 1, 2, 30, 34]
 >>> my_other_list = [0.9, 1, 2, "30", "thirty nine"]

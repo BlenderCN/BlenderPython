@@ -91,7 +91,7 @@ you'll also see it written this way, but it is not common.
 ```python
 >>> tuple_three = tuple(['some_string', some_number, 0.3444])
 ```
-A tuple is _immutable_. This means you can not change any of the members of the tuple, once it's created it is unchangeable - also if the tuple was made with variables. If you change a variable, the tuple's content is not updated.. see what happens when we update var2 to hold a new string `SAL`.
+A tuple is _immutable_. This means you can not change any of the members of the tuple, once it's created it is unchangeable - also if the tuple was made with variables. If you change a variable, the tuple's content is not updated.. see what happens when we update var2 to hold a new string `SAL `.
 
 ```python
 >>> var1 = "I am a "
@@ -100,8 +100,13 @@ A tuple is _immutable_. This means you can not change any of the members of the 
 >>> tuple_four = var1, var2, var3
 >>> tuple_four
 ... ('I am a ', 'HAL ', '9000 computer')
->>> var2 = 'SAL'
+>>> var2 = 'SAL '
 >>> var4
 ('I am a ', 'HAL ', '9000 computer')    
 ```
-To change a tuple you must assign a new tuple to the variable.
+To change a tuple you must assign a new tuple by overwriting the tuple stored in `var4`.
+```python
+>>> var4 = (var1, var2, var3)
+>>> var4
+('I am a ', 'SAL', '9000 computer')
+```

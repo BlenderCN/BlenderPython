@@ -149,5 +149,5 @@ It's not uncommon to have nested lists, or Multi-Dimensional lists.
 >>> my_nested_list = [20, 30, my_list]
 >>> my_nested_list
 [20, 30, [0, 1, 2, 30, 34]]
->>> multi_dim_list = [[1.0, 0.1, 2.0], [0.2, 1.0, 0.3], [1.0, 0.3, 1.0], [0.2, 0.3, 1.0]]
+>>> multi_dim_list = [[1.0, 0.1, 2.0], [0.2, 1.0, 0.3], [1.0, 0.3, 1.0]]
 ```

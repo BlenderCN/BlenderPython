@@ -74,7 +74,7 @@ Further _string manipulation_ is discussed at a later stage. Strings are used a 
 
 ###tuple
 
-This is a data type which is used to collect data. You might a tuple defined in various ways.
+This is a data type which is used to collect data. You'll see a tuple defined in various ways.
 
 ```python
 >>> some_number = 20

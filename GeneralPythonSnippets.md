@@ -51,7 +51,7 @@ The words you read right now are strings. In Python we express strings by wrappi
 >>> my_second_string = 'I am a HAL 9000 computer'
 >>> my_third_string = """I am a HAL 9000 computer"""
 ```
-You can add strings together:
+You can add strings together, we call it 'concatenation':
 ```python
 # notice the spaces at the end of string, why is that?
 >>> var1 = "I am a "  

@@ -24,7 +24,7 @@ While you learn Python `print()` is your friend. It will try to display whatever
 
 ```python
 >>> print("Hello apprentice")
-...Hello apprentice
+... Hello apprentice
 ```
 
 I'll return to `print()` frequently on this page to show how to display information that you will find helpful while coding.
@@ -36,7 +36,7 @@ Whole numbers, positive or negative. You'll see plenty of these as you progress.
 # let's make a variable called hal
 >>> hal = 3000
 >>> print(hal * 3)
-...9000
+... 9000
 ```
 ###float
 
@@ -60,14 +60,14 @@ You can add strings together, we call it 'concatenation':
 >>> var2 = "HAL "
 >>> var3 = "9000 computer"
 >>> print(var1 + var2 + var3)
-...I am a HAL 9000 computer
+... I am a HAL 9000 computer
 ```
 
 to convert a non string to a string is done explicitly using `str()`:
 ```python
 >>> some_number = 9000
 >>> "Hal " + str(some_number) 
-..."Hal 9000"`
+... "Hal 9000"`
 ```
 
 Further _string manipulation_ is discussed at a later stage. Strings are used a lot in Python, but in Blender they're commonly used to name objects, data, or set the properties of data.
@@ -90,3 +90,4 @@ you'll also see it written this way, but it is not common.
 ```python
 >>> tuple_one = tuple(['some_string', some_number, 0.3444])
 ```
+A tuple is _immutable_. This means you can not change one of the members of the tuple without making a new tuple. This is best elaborated on in the `List` section below.

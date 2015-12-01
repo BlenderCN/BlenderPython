@@ -28,3 +28,8 @@ An important way to debug your code, it doesn't discriminate between beginners a
 ```
 
 I'll return to `print()` frequently on this page to show how to display information that you will find helpful while coding.
+
+###integer
+
+whole numbers
+

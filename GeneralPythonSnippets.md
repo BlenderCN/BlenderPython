@@ -34,13 +34,7 @@ I'll return to `print()` frequently on this page to show how to display informat
 whole numbers, positive or negative
 ```python
 # let's make a variable called hal
->>> hal = 9000
->>> print(hal)
+>>> hal = 3000
+>>> print(hal * 3)
 ...9000
 
->>> print('IQ of 6000 PE teachers: 6000')
-```'IQ of 6000 PE teachers: 6000'
-
->>> some_number = 6000
->>> print('IQ of {0} PE teachers: {0}'.format(some_number))
-```

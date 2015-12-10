@@ -1,6 +1,19 @@
-Blender bpy has a solid collection of methods to perform common geometric tasks, the mathutils.geometry submodule is worth exploring.
+The mathutils.geometry submodule has a collection of methods that perform common geometric tasks. [Listed here](http://www.blender.org/api/blender_python_api_current/search.html?q=mathutils.geometry&check_keywords=yes&area=default)
 
-Example 1. intersect_line_plane
+These functions tend to be self explanatory, and if you're stuck you can google them and i'm sure you'll get several code snippets to digest. Some functions accept a Matrix so you don't have to do extra multiplication and inverting, others are less sophisticated and let you take care of having the right transforms :)
+
+My personal favourites are 
+
+- interpolate_bezier
+- intersect_line_line
+- intersect_line_plane
+- intersect_ray_tri
+
+Some food for thought.
+
+**Example 1. intersect_line_plane**  
+
+This function expects (vector_a, vector_b, plane_coordinate, plane_normal, flip)
 
 ```python
 import bpy

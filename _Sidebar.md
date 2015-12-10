@@ -38,6 +38,7 @@ Order / Organization
   
 Miscellaneous  
 
+- [Mathutils](mathutils):lock:  
 - [Modifiers](Modifiers):lock:  
 - [Particle Systems](Particle Systems):lock:  
 - [vertex colors](VertexColors):lock:  

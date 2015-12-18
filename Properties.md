@@ -50,7 +50,7 @@ If you run the above code in TextEditor, it will add a panel to the Properties w
 
 It will also print the current value of `some_int` to the console when you change it. It does this because of the update function, it calls `some_update()` with `self, context` being provided for us. Inside the `some_update()` function we are printing `self.some_int`, and self in this case is the same as `bpy.context.scene`. But.. we don't know from the update function which Property was modified to trigger it. Don't let this side track you - There's a solution.
 
-### Update function defined inline
+### Update function defined inline using lambda
 
 Now! let's say we want to do more dynamic stuff, where we want to know where the update came from. The update function can be defined _inline_.
 

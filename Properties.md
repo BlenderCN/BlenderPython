@@ -101,3 +101,7 @@ if __name__ == "__main__":
     register()
 
 ```
+
+### Organizing properties (avoid namespace pollution)
+
+What's namespace pollution? It's like a classroom with 20 people, 6 of which are called 'Peter'. Too much confusion regarding who's who - You need to ask their surnames to distinguish one from the other. This is called  'disambiguation'.. TODO

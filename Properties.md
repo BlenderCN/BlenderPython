@@ -48,4 +48,4 @@ If you run the above code in TextEditor, it will add a panel to the Properties w
 
 ![image](https://cloud.githubusercontent.com/assets/619340/11906029/106cc8b8-a5ca-11e5-9b15-25dbad98453d.png)
 
-It will also print the current value of `some_int` to the console when you change it.
+It will also print the current value of `some_int` to the console when you change it. It does this because of the update function, it calls `some_update()` with `self, context` being provided for us. Inside the `some_update()` function we are printing `self.some_int`, and self in this case is the same as `bpy.context.scene`

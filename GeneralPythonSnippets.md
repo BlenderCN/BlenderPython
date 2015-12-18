@@ -1,6 +1,6 @@
 This is a crash course in the Python subset. If you already master these you should not waste time reading this, unless you want to check for typos or factual inaccuracies. 
 
-Any combination of the following topics will be present in any useful Python script. This page hopes to introduce you to the broad outlines of the Python language and will contain links for more detailed information. It makes little sense to get very detailed early in the learning process so i'll cover things quickly. 
+Any combination of the following topics will be present in useful Python scripts. This page hopes to introduce you to the broad outlines of the Python language and will contain links for more detailed information. It makes little sense to get very detailed early in the learning process so i'll cover things quickly. 
 
 It's OK if this doesn't make a lot of sense but at least try to follow along in Blender's Python console. Learning to type accurately is incredibly important for programming  
 

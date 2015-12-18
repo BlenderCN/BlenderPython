@@ -12,9 +12,40 @@ TODO
 import bpy
 from bpy.props import IntProperty
 
-def my_update(self, context):
-   print(self)
 
-bpy.types.Scene.some_int = IntProperty(min=0, max=4, name='some_int', update=my_update)
+def my_update(self, context):
+   print(self.some_int)
+
+class HelloWorldPanel(bpy.types.Panel):
+    """Creates a Panel in the Object properties window"""
+    bl_label = "Hello World Panel"
+    bl_idname = "OBJECT_PT_hello"
+    bl_space_type = 'PROPERTIES'
+    bl_region_type = 'WINDOW'
+
+    def draw(self, context):
+        layout = self.layout
+        obj = context.object
+        row = layout.row()
+        row.prop(context.scene, 'some_int')
+
+
+def register():
+    bpy.types.Scene.some_int = IntProperty(min=0, max=4, update=my_update)
+    bpy.utils.register_class(HelloWorldPanel)
+
+
+def unregister():
+    bpy.utils.unregister_class(HelloWorldPanel)
+    del bpy.types.Scene.some_int
+
+
+if __name__ == "__main__":
+    register()
 
 ```
+If you run the above code in TextEditor, it will add a panel to the Properties window, in the Scene Tab. It will look something like this:
+
+![image](https://cloud.githubusercontent.com/assets/619340/11906029/106cc8b8-a5ca-11e5-9b15-25dbad98453d.png)
+
+It will also print the current value of `some_int` to the console when you change it.

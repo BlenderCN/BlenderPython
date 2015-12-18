@@ -43,6 +43,7 @@ Miscellaneous
 - [Particle Systems](Particle Systems):lock:  
 - [vertex colors](VertexColors):lock:  
 - [Textures UV DPI](UV---DPI-(variable-or-homogeneous))  
+- [Properties](Properties):wrench:    
 - [Operators (and callbacks)](Operators):wrench:    
 - [bgl / blf](bgl_blf):lock:  
 - [Grease Pencil](GreasePencil)    

@@ -2,7 +2,9 @@ This is a crash course in the Python subset. If you already master these you sho
 
 Any combination of the following topics will be present in useful Python scripts. This page hopes to introduce you to the broad outlines of the Python language and will contain links for more detailed information. It makes little sense to get very detailed early in the learning process so i'll cover things quickly. 
 
-It's OK if this doesn't make a lot of sense but at least try to follow along in Blender's Python console. Learning to type accurately is incredibly important for programming  
+It's OK if this doesn't make a lot of sense. If you don't understand something remember that the way we write things is often a convention because a convention had to exist (just like if you look at a map of Africa and see straight line borders which have no relationship to geography, -- what's that all about?? exactly, it's a reality that exists only in the minds of the people who've seen those maps.). 
+
+Follow along in Blender's Python console. Learning to type accurately is incredibly important for programming.   
 
 | basic 1 | basic 2 | intermediate |
 |---------|---------|--------------|

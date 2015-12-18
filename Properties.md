@@ -51,3 +51,51 @@ If you run the above code in TextEditor, it will add a panel to the Properties w
 It will also print the current value of `some_int` to the console when you change it. It does this because of the update function, it calls `some_update()` with `self, context` being provided for us. Inside the `some_update()` function we are printing `self.some_int`, and self in this case is the same as `bpy.context.scene`. But.. we don't know from the update function which Property was modified to trigger it. Don't let this side track you - There's a solution.
 
 Now! let's say we want to do more dynamic stuff, where we want to know where the update came from. The update function can be defined _inline_.
+
+```python
+import bpy
+from bpy.props import IntProperty
+
+
+def my_update(self, context, origin):
+   print(origin, getattr(self, origin))
+
+class HelloWorldPanel(bpy.types.Panel):
+    """Creates a Panel in the Object properties window"""
+    bl_label = "Hello World Panel"
+    bl_idname = "OBJECT_PT_hello"
+    bl_space_type = 'PROPERTIES'
+    bl_region_type = 'WINDOW'
+
+    def draw(self, context):
+        layout = self.layout
+        obj = context.object
+        col = layout.column()
+        col.prop(context.scene, 'some_int')
+        col.prop(context.scene, 'some_other_int')        
+
+
+def register():
+    bpy.types.Scene.some_int = IntProperty(
+        min=0,
+        update=lambda self, context: my_update(self, context, origin='some_int')
+    )
+
+    bpy.types.Scene.some_other_int = IntProperty(
+        min=0,
+        update=lambda self, context: my_update(self, context, origin='some_other_int')
+    )
+
+    bpy.utils.register_class(HelloWorldPanel)
+
+
+def unregister():
+    bpy.utils.unregister_class(HelloWorldPanel)
+    del bpy.types.Scene.some_int
+    del bpy.types.Scene.some_other_int    
+
+
+if __name__ == "__main__":
+    register()
+
+```

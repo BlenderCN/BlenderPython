@@ -8,6 +8,8 @@ There are many more property types but the `IntProperty` is a convenient example
 
 ### Update function
 
+The panel code for this can be found in _TextEditors -> Templates -> Python -> UI Panel Simple_.
+
 ```python
 import bpy
 from bpy.props import IntProperty

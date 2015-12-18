@@ -54,7 +54,7 @@ It will also print the current value of `some_int` to the console when you chang
 
 ### Update function defined inline using lambda
 
-Now! let's say we want to do more dynamic stuff, where we want to know where the update came from. The update function can be defined _inline_.
+Now! let's say we want to do more dynamic stuff and want to know where the update came from. The update function can be defined _inline_.
 
 ```python
 import bpy

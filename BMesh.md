@@ -111,3 +111,17 @@ def create_icospehere(subdiv, d):
     bm.free()
     return v, e, p
 ```
+
+## bmesh methods / attributes
+
+bmesh will evolve steadily to make scripting meshes easier. I will try to keep this updated and will post-mark this section so you know when I last updated it.  
+  
+19 Dec 2015
+
+| method                  | description                                                  |
+|-------------------------|--------------------------------------------------------------|
+| bm.from_mesh(data)      | get a bm representation of obj.data (Mesh data only)         |
+| bm.clear()              | wipe all geometry data in the current bmesh                  |
+
+
+ bm has an attribute to `bm.clear()` , it evaporates all geom data instantly.

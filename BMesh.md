@@ -124,4 +124,4 @@ bmesh will evolve steadily to make scripting meshes easier. I will try to keep t
 | bm.clear()              | wipe all geometry data in the current bmesh                  |
 
 
- bm has an attribute to `bm.clear()` , it evaporates all geom data instantly.
+

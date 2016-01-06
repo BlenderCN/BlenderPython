@@ -126,3 +126,68 @@ bm.free()
 In the code I reference a Mesh object called 'Graph'. The name is arbitrary, the function of the mesh is to act as the spin profile. In other applications this is called 'Lathe'.
 
 ![image spin](https://cloud.githubusercontent.com/assets/619340/11323690/afde11f6-9119-11e5-95de-6e57bb4c71c3.png)
+
+### bmesh.ops.bevel
+
+![image](https://cloud.githubusercontent.com/assets/619340/12142838/78cfd854-b47b-11e5-99e0-a93edf8aae83.png)
+
+
+```
+import bmesh
+import sverchok
+from sverchok.utils.sv_bmesh_utils import bmesh_from_pydata, pydata_from_bmesh
+
+def do_bevel(idx, radius, segments, profile, verts, edges):
+    
+    if idx > (len(verts) - 1):
+        return [], []
+    
+    print(' ----', verts, edges)
+    
+    bm = bmesh_from_pydata(verts, edges, [])
+
+    bmesh.ops.bevel(
+        bm,
+        geom=[v for v in bm.verts if v.index==idx],
+        offset=radius,
+        offset_type=0,
+        segments=segments,
+        vertex_only=True,
+        profile=profile,
+        material=0,
+        loop_slide=True,
+        clamp_overlap=True
+    )
+
+    verts, edges, _ = pydata_from_bmesh(bm)
+    return [verts], [edges]
+    
+
+def sv_main(verts=[[]], edges=[[]], radius=0.3, index=1, segments=5, profile=0.2):
+    verts_out = []
+    edges_out = []
+
+    in_sockets = [
+        ['v', 'some_socket_name', verts],
+        ['s', 'edges', edges],
+        ['s', 'radius', radius],
+        ['s', 'index', index],
+        ['s', 'segments', segments],
+        ['s', 'profile', profile]
+    ]
+    
+    if verts and verts[0]:
+        if edges and edges[0]:
+            verts, edges = do_bevel(index, radius, segments, profile, verts[0], edges[0])
+            verts_out.extend(verts)
+            edges_out.extend(edges)
+
+    out_sockets = [
+        ['v', 'verts', [verts_out]],
+        ['s', 'edges', [edges_out]]
+    ]
+    print(out_sockets)
+
+    return in_sockets, out_sockets
+```
+

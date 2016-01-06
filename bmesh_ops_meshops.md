@@ -127,7 +127,7 @@ In the code I reference a Mesh object called 'Graph'. The name is arbitrary, the
 
 ![image spin](https://cloud.githubusercontent.com/assets/619340/11323690/afde11f6-9119-11e5-95de-6e57bb4c71c3.png)
 
-### bmesh.ops.bevel
+### bmesh.ops.bevel example
 
 ![image](https://cloud.githubusercontent.com/assets/619340/12142838/78cfd854-b47b-11e5-99e0-a93edf8aae83.png)
 

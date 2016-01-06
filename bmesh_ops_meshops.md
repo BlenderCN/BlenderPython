@@ -131,8 +131,9 @@ In the code I reference a Mesh object called 'Graph'. The name is arbitrary, the
 
 ![image](https://cloud.githubusercontent.com/assets/619340/12142838/78cfd854-b47b-11e5-99e0-a93edf8aae83.png)
 
+herer using a snippet of scripted node, (Sverchok)
 
-```
+```python
 import bmesh
 import sverchok
 from sverchok.utils.sv_bmesh_utils import bmesh_from_pydata, pydata_from_bmesh

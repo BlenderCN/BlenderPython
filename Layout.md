@@ -64,7 +64,6 @@ You can get more complex and entirely rearrange layouts depending how many pixel
 
         mid_side = l_split.column()
         mid_side.operator(OP, text='', icon="TRIA_UP")
-        # mid_side.operator(OP, text='', icon="DISCLOSURE_TRI_RIGHT")
         mid_side.label('')
         mid_side.operator(OP, text='', icon="TRIA_DOWN")     
 

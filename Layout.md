@@ -2,10 +2,6 @@ The best introduction to UI layout and the templating system used by Blender is 
 
 All examples will use the same template code, unless otherwise specified. Image should show you what's different and then the code will start to make more sense.
 
-### Responsive layout
-
-You can get more complex and entirely rearrange layouts depending how many pixels wide the UI panel is. Below this example will reset the percentage of the width that the arrow buttons should occupy when the user resizes the panel horizontally.
-
 ```python
 import bpy
 
@@ -20,6 +16,26 @@ class LayoutDemoPanel(Panel):
     bl_region_type = 'WINDOW'
     bl_context = "scene"
 
+    def draw(self, context):
+        ...
+
+def register():
+    bpy.utils.register_class(LayoutDemoPanel)
+
+def unregister():
+    bpy.utils.unregister_class(LayoutDemoPanel)
+
+
+if __name__ == "__main__":
+    register()
+```
+
+### Responsive layout
+
+You can get more complex and entirely rearrange layouts depending how many pixels wide the UI panel is. Below this example will reset the percentage of the width that the arrow buttons should occupy when the user resizes the panel horizontally.
+
+
+```python
     def draw(self, context):
 
         layout = self.layout
@@ -56,16 +72,9 @@ class LayoutDemoPanel(Panel):
         right_side.operator(OP, text='', icon='RIGHTARROW_THIN')
         right_side.operator(OP, text='', icon="TRIA_RIGHT")
         right_side.operator(OP, text='', icon='RIGHTARROW_THIN')
-
-def register():
-    bpy.utils.register_class(LayoutDemoPanel)
-
-def unregister():
-    bpy.utils.unregister_class(LayoutDemoPanel)
-
-
-if __name__ == "__main__":
-    register()
 ```
+
+![image](https://cloud.githubusercontent.com/assets/619340/12372505/8304af5c-bc5a-11e5-819c-965c2ca8fee1.png)
+
 
 

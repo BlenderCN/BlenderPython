@@ -2,7 +2,7 @@ The best introduction to UI layout and the templating system used by Blender is 
 
 All examples will use the same template code, unless otherwise specified. Image should show you what's different and then the code will start to make more sense.
 
-```
+```python
 import bpy
 
 from bpy.props import *

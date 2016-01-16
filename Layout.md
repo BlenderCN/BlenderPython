@@ -2,6 +2,10 @@ The best introduction to UI layout and the templating system used by Blender is 
 
 All examples will use the same template code, unless otherwise specified. Image should show you what's different and then the code will start to make more sense.
 
+### Responsive layout
+
+You can get more complex and entirely rearrange layouts depending how many pixels wide the UI panel is. Below this example will reset the percentage of the width that the arrow buttons should occupy when the user resizes the panel horizontally.
+
 ```python
 import bpy
 

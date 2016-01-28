@@ -117,6 +117,7 @@ What's namespace pollution? It's like a classroom with 20 people, 6 of which are
         props = obj.parametric_circle:
         col = l.column()
         for propname in props.rna_type.properties.keys():
-            if not propname in {'rna_type', 'name'}:
-                col.prop(props, propname)
+            if propname in {'rna_type', 'name'}:
+                continue
+            col.prop(props, propname)
 ```

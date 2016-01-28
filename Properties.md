@@ -110,14 +110,32 @@ What's namespace pollution? It's like a classroom with 20 people, 6 of which are
 
 ### Iterating over a PropertyGroup (for use in UI for example)
 
-```python
-        # imagine we have a PropertyGroup registered on bpy.types.Object
-        # and called it `parametric_circle`
+for UI you really want to do this inline to avoid extra function calls.
 
-        props = obj.parametric_circle:
-        col = l.column()
-        for propname in props.rna_type.properties.keys():
-            if propname in {'rna_type', 'name'}:
-                continue
-            col.prop(props, propname)
+```python
+# imagine we have a PropertyGroup registered on bpy.types.Object
+# and called it `parametric_circle`
+
+props = obj.parametric_circle:
+col = l.column()
+for propname in props.rna_type.properties.keys():
+    if propname in {'rna_type', 'name'}:
+        continue
+    col.prop(props, propname)
+```
+
+but for one off lookups, it might be nice to have a helper function:
+
+```python
+def get_props2(consumable):
+    propnames = consumable.rna_type.properties.keys()
+    for p in filter(lambda n: not n in {'rna_type', 'name'}, propnames):
+        yield p
+
+# usage..
+obj = bpy.context.active_object
+for i in get_props2(obj.parametric_circle):
+    print(i)
+```
+
 ```

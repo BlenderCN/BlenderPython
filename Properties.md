@@ -107,3 +107,14 @@ if __name__ == "__main__":
 ### Organizing properties (avoid namespace pollution)
 
 What's namespace pollution? It's like a classroom with 20 people, 6 of which are called Peter. Too much confusion regarding who's who - You need to ask their surnames to distinguish one from the other. This is called  'disambiguation'.. TODO
+
+### Iterating over a PropertyGroup (for use in UI for example)
+
+        # imagine we have a PropertyGroup registered on bpy.types.Object
+        # and called it `parametric_circle`
+
+        props = obj.parametric_circle:
+        col = l.column()
+        for propname in props.rna_type.properties.keys():
+            if not propname in {'rna_type', 'name'}:
+                col.prop(props, propname)

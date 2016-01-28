@@ -110,6 +110,7 @@ What's namespace pollution? It's like a classroom with 20 people, 6 of which are
 
 ### Iterating over a PropertyGroup (for use in UI for example)
 
+```python
         # imagine we have a PropertyGroup registered on bpy.types.Object
         # and called it `parametric_circle`
 
@@ -118,3 +119,4 @@ What's namespace pollution? It's like a classroom with 20 people, 6 of which are
         for propname in props.rna_type.properties.keys():
             if not propname in {'rna_type', 'name'}:
                 col.prop(props, propname)
+```

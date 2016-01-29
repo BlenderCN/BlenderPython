@@ -138,6 +138,6 @@ for i in get_props2(obj.parametric_circle):
     print(i)
 ```
 
-### Storing properties as json
+### Storing / Importing properties as json or dictionary literal
 
-code for that can be found here: https://github.com/zeffii/BlenderPythonRecipes/wiki/bpy_data_texts#reading-and-writing-json-or-dict-literal
+Also known as serialization / deserialization. Code for that can be found here: [reading-and-writing-json-or-dict-literal](bpy_data_texts#reading-and-writing-json-or-dict-literal)

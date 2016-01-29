@@ -138,4 +138,6 @@ for i in get_props2(obj.parametric_circle):
     print(i)
 ```
 
-```
+### Storing properties as json
+
+code for that can be found here: https://github.com/zeffii/BlenderPythonRecipes/wiki/bpy_data_texts#reading-and-writing-json-or-dict-literal

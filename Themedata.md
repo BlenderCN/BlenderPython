@@ -33,7 +33,7 @@ for prop in get_props2(f):
 ```
 ### brutal exporter for 3dview theme
 
-this combines information found in [serializating properties]() and [iterating over properties]()
+this combines information found in [serializating properties](bpy_data_texts#reading-and-writing-json-or-dict-literal) and [iterating over properties](Properties#iterating-over-a-propertygroup-for-use-in-ui-for-example)
 
 ```python
 import bpy

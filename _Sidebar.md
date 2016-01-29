@@ -48,6 +48,7 @@ Miscellaneous
 - [Operators (and callbacks)](Operators):wrench:    
 - [bgl / blf](bgl_blf):lock:  
 - [Grease Pencil](GreasePencil)    
+- [Themes](Themedata)  
   
 Add-ons  
 

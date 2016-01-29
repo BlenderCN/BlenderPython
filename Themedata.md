@@ -14,8 +14,20 @@ def get_props2(consumable):
 current_theme = bpy.context.user_preferences.themes.items()[0][0]  
 f = bpy.context.user_preferences.themes[current_theme].view_3d
 
+print('--')
+
 for prop in get_props2(f):
     value = getattr(f, prop)
-    print(prop, str(value))
+    
+    try:
+        can_iterate = iter(value)
+        print(prop, value[:])
+    except TypeError:
+        if prop == 'space':
+            print(prop)
+        else:
+            print(prop, value)
+
+        
     # print(type(value))
 ```

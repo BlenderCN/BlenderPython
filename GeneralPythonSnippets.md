@@ -245,8 +245,14 @@ f.work(60, damage=20, reverse=-1)
 print(f.input)
 
 """
+work
 a dict {'damage': 20, 'reverse': -1}
+work
 a tuple (20, 1)
+work
+a dict {'damage': 20, 'reverse': -1}
+input
+('input', 0)
 """
 ```
 

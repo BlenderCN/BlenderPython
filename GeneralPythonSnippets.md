@@ -153,3 +153,42 @@ It's not uncommon to have nested lists, or Multi-Dimensional lists.
 [20, 30, [0, 1, 2, 30, 34]]
 >>> multi_dim_list = [[1.0, 0.1, 2.0], [0.2, 1.0, 0.3], [1.0, 0.3, 1.0]]
 ```
+
+unfinished.
+
+###Classes
+
+basic classes
+
+
+more specific / advanced dynamic class instances
+
+```python
+class DemoClass:
+
+    def __init__(self):
+        self.power = 2
+
+    def __getattr__(self, name):
+
+        def method(*args, **kw):
+            if name in ['work', 'stereo']:                
+                if isinstance(kw, dict) and kw:
+                    print('a dict')
+                elif isinstance(args, tuple) and args:
+                    print('a tuple')
+
+        return method
+
+
+f = DemoClass()
+
+f.work(damage=20, reverse=-1)
+f.work(20, 1)
+
+"""
+a dict
+a tuple
+"""
+
+```

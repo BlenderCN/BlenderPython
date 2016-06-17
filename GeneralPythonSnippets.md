@@ -200,44 +200,9 @@ c = NewClass()
 c.bar   # <-- attr
 c.bar(20)  # <-- method!
 ```
-then the above example is extended this way (probably maybe esoteric example)
 
+the way Python works doesn't allow us to share the names of attributes and methods. for instance the following is not permitted:
 ```python
-class DemoClass:
-
-    def __init__(self):
-        self.power = 2
-
-    def __getattr__(self, name):
-
-        def method(*args, **kw):
-        
-            if name in ['work', 'stereo', 'input']:
-                if isinstance(kw, dict) and kw:
-                    print('a dict', kw)
-                elif isinstance(args, tuple) and args:
-                    print('a tuple', args)
-                elif not (args and kw):
-                    print(type(args), 'no method')
-                    return -1
-
-
-        return method
-
-
-f = DemoClass()
-
-f.work(damage=20, reverse=-1)
-f.work(20, 1)
-f.work(60, damage=20, reverse=-1)
-print(f.input())
-
-"""
-a dict {'damage': 20, 'reverse': -1}
-a tuple (20, 1)
-a dict {'damage': 20, 'reverse': -1}
-<class 'tuple'> no method
--1
-"""
+some_class_instance.some_name  # <-- attr
+some_class_instance.some_name()  # <-- method
 ```
-

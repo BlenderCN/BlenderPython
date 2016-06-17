@@ -229,14 +229,6 @@ class DemoClass:
 
         return method
 
-    # def __setattr__(self, key=None, value=None):
-    #     # val = self.ruck.get(key)
-    #     #if val:
-    #     #    print(val)
-    #     print(self.ruck)
-
-
-
 f = DemoClass()
 
 f.work(damage=20, reverse=-1)

@@ -207,44 +207,37 @@ class DemoClass:
 
     def __init__(self):
         self.power = 2
-        self.ruck = {}
-
-        self.ruck['input'] = 1
 
     def __getattr__(self, name):
 
-        print(name)
-        if name in self.ruck:
-            return (name, 0)
-
         def method(*args, **kw):
         
-            if name in ['work', 'stereo']:
+            if name in ['work', 'stereo', 'input']:
                 if isinstance(kw, dict) and kw:
                     print('a dict', kw)
                 elif isinstance(args, tuple) and args:
                     print('a tuple', args)
-        
+                elif not (args and kw):
+                    print(type(args), 'no method')
+                    return -1
 
 
         return method
+
 
 f = DemoClass()
 
 f.work(damage=20, reverse=-1)
 f.work(20, 1)
 f.work(60, damage=20, reverse=-1)
-print(f.input)
+print(f.input())
 
 """
-work
 a dict {'damage': 20, 'reverse': -1}
-work
 a tuple (20, 1)
-work
 a dict {'damage': 20, 'reverse': -1}
-input
-('input', 0)
+<class 'tuple'> no method
+-1
 """
 ```
 

@@ -174,9 +174,9 @@ class DemoClass:
         def method(*args, **kw):
             if name in ['work', 'stereo']:                
                 if isinstance(kw, dict) and kw:
-                    print('a dict')
+                    print('a dict', kw)
                 elif isinstance(args, tuple) and args:
-                    print('a tuple')
+                    print('a tuple', args)
 
         return method
 
@@ -187,8 +187,7 @@ f.work(damage=20, reverse=-1)
 f.work(20, 1)
 
 """
-a dict
-a tuple
+a dict {'damage': 20, 'reverse': -1}
+a tuple (20, 1)
 """
-
 ```

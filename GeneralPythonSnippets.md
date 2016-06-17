@@ -193,3 +193,60 @@ a dict {'damage': 20, 'reverse': -1}
 a tuple (20, 1)
 """
 ```
+
+more!? OK :) what if I want to have attributes and functions with the same name, but have a unique behaviour if I do 
+```python
+c = NewClass()
+c.bar   # <-- attr
+c.bar(20)  # <-- method!
+```
+then the above example is extended this way (probably maybe esoteric example)
+
+```python
+class DemoClass:
+
+    def __init__(self):
+        self.power = 2
+        self.ruck = {}
+
+        self.ruck['input'] = 1
+
+    def __getattr__(self, name):
+
+        print(name)
+        if name in self.ruck:
+            return (name, 0)
+
+        def method(*args, **kw):
+        
+            if name in ['work', 'stereo']:
+                if isinstance(kw, dict) and kw:
+                    print('a dict', kw)
+                elif isinstance(args, tuple) and args:
+                    print('a tuple', args)
+        
+
+
+        return method
+
+    # def __setattr__(self, key=None, value=None):
+    #     # val = self.ruck.get(key)
+    #     #if val:
+    #     #    print(val)
+    #     print(self.ruck)
+
+
+
+f = DemoClass()
+
+f.work(damage=20, reverse=-1)
+f.work(20, 1)
+f.work(60, damage=20, reverse=-1)
+print(f.input)
+
+"""
+a dict {'damage': 20, 'reverse': -1}
+a tuple (20, 1)
+"""
+```
+

@@ -163,6 +163,8 @@ basic classes
 
 more specific / advanced dynamic class instances
 
+The following example is not likely to be useful to most use cases. There are scenarios when you don't want (or can't) write a class method for each possible feature of your class. Adding methods (and hey they're handled) dynamically can help you make your classes code easier to use and maintain -- if you know what you're doing.
+
 ```python
 class DemoClass:
 

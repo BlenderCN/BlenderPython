@@ -49,7 +49,8 @@ Miscellaneous
 - [bgl / blf](bgl_blf):lock:  
 - [Grease Pencil](GreasePencil)    
 - [Themes](Themedata)  
-  
+- [Areas](Areas)    
+   
 Add-ons  
 
 - [introduction](Addons_Introduction):lock:  

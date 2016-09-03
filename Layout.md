@@ -1,4 +1,4 @@
-The best introduction to UI layout and the templating system used by Blender is still the UI cookbook. There's no harm in showing more examples, especially concerning the draw function.
+The best introduction to UI layout and the templating system used by Blender is [still the UI cookbook](https://wiki.blender.org/index.php/Dev:Py/Scripts/Cookbook/Code_snippets). There's no harm in showing more examples, especially concerning the draw function.
 
 All examples will use the same template code, unless otherwise specified. Image should show you what's different and then the code will start to make more sense.
 

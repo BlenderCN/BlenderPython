@@ -1,3 +1,4 @@
+```python
 import bpy
 
 def quantize(original_obj, numdiv_shortest_side):
@@ -51,3 +52,4 @@ def quantize(original_obj, numdiv_shortest_side):
 numdiv_shortest_side = 21
 original_obj = bpy.context.active_object
 quantize(original_obj, numdiv_shortest_side)
+```

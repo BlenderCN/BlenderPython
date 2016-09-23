@@ -106,7 +106,68 @@ if __name__ == "__main__":
 
 ### Organizing properties (avoid namespace pollution)
 
-What's namespace pollution? It's like a classroom with 20 people, 6 of which are called Peter. Too much confusion regarding who's who - You need to ask their surnames to distinguish one from the other. This is called  'disambiguation'.. TODO
+What's namespace pollution? It's like a classroom with 20 people, 6 of which are called Peter. Too much confusion regarding who's who - You need to ask their surnames to distinguish one from the other. This is called  'disambiguation'.. 
+
+### Property Group / Pointer Property
+
+```python
+import bpy
+
+## some panel somewhere
+def draw(self, context):
+    self.layout.prop(context.scene.my_prop_grp, 'custom_1')
+
+
+class MyPropertyGroup(bpy.types.PropertyGroup):
+    custom_1 = bpy.props.FloatProperty(name="My Float")
+    custom_2 = bpy.props.IntProperty(name="My Int")
+
+def register():
+    bpy.utils.register_class(MyPropertyGroup)
+    bpy.types.Scene.my_prop_grp = bpy.props.PointerProperty(type=MyPropertyGroup)
+
+def unregister():
+    bpy.utils.unregister_class(MyPropertyGroup)
+
+    # deleting the group, removes automatically all children. :)
+    del bpy.types.Scene.my_prop_grp
+
+
+```
+
+or like this.. 
+
+```python
+class SomeAddonProperties(bpy.types.PropertyGroup):
+
+    @classmethod
+    def register(cls):
+        Scn = bpy.types.Scene
+
+        Scn.some_addon_props = PointerProperty(
+            name="some addon's internal global properties",
+            description="some add-on uses these properties for shared properties between operators",
+            type=cls,
+        )
+
+        cls.custom_1 = bpy.props.FloatProperty(name="My Float")
+        cls.custom_2 = bpy.props.IntProperty(name="My Int")
+
+
+    @classmethod
+    def unregister(cls):
+        del bpy.types.Scene.some_addon_props
+
+
+def register():
+    ...
+    bpy.utils.register_class(SomeAddonProperties)
+
+def unregister():
+    ...
+    bpy.utils.unregister_class(SomeAddonProperties)   
+```
+
 
 ### Iterating over a PropertyGroup (for use in UI for example)
 

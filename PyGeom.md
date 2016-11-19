@@ -1,3 +1,5 @@
+This page is mostly a code dump and not arranged for convenient reading. sorry.
+
 ### Matrix Multiplication
 
 matrix multiplication  , matrix in , vlist in

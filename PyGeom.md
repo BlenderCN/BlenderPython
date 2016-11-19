@@ -34,3 +34,65 @@ def distance_point_on_tri(point, p1, p2, p3):
     d = a*x + b*y + c*z
     return abs(a*u + b*v + c*w + d) / sqrt(a*a + b*b + c*c)
 ```
+
+### Unsorted
+
+```python
+import math
+
+def interp_v3_v3v3(a, b, t=0.5):
+    if t == 0.0: return a
+    elif t == 1.0: return b
+    else:
+        s = 1.0 - t
+        return (s * a[0] + t * b[0], s * a[1] + t * b[1], s * a[2] + t * b[2])
+
+def length(v):
+    return math.sqrt((v[0] * v[0]) + (v[1] * v[1]) + (v[2] * v[2]))
+
+def normalize(v):
+    l = math.sqrt((v[0] * v[0]) + (v[1] * v[1]) + (v[2] * v[2]))
+    return [v[0]/l, v[1]/l, v[2]/l]
+
+def sub_v3_v3v3(a, b):
+    return a[0]-b[0], a[1]-b[1], a[2]-b[2]
+
+def madd_v3_v3v3fl(a, b, f=1.0):
+    return a[0]+b[0]*f, a[1]+b[1]*f, a[2]+b[2]*f
+
+def dot_v3v3(a, b):
+    return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]
+
+def isect_line_plane(l1, l2, plane_co, plane_no):
+    u = l2[0]-l1[0], l2[1]-l1[1], l2[2]-l1[2]
+    h = l1[0]-plane_co[0], l1[1]-plane_co[1], l1[2]-plane_co[2]
+    dot = plane_no[0]*u[0] + plane_no[1]*u[1] + plane_no[2]*u[2]
+
+    if abs(dot) > 1.0e-5:
+        f = -(plane_no[0]*h[0] + plane_no[1]*h[1] + plane_no[2]*h[2]) / dot
+        return l1[0]+u[0]*f, l1[1]+u[1]*f, l1[2]+u[2]*f        
+    else:
+        # parallel to plane
+        return False
+
+def obtain_normal3(p1, p2, p3):
+    return [
+        ((p2[1]-p1[1])*(p3[2]-p1[2]))-((p2[2]-p1[2])*(p3[1]-p1[1])),
+        ((p2[2]-p1[2])*(p3[0]-p1[0]))-((p2[0]-p1[0])*(p3[2]-p1[2])),
+        ((p2[0]-p1[0])*(p3[1]-p1[1]))-((p2[1]-p1[1])*(p3[0]-p1[0]))
+    ]
+
+def mean(verts):
+    vx, vy, vz = 0, 0, 0
+    for v in verts:
+        vx += v[0]
+        vy += v[1]
+        vz += v[2]
+    numverts = len(verts) 
+    return vx/numverts, vy/numverts, vz/numverts
+
+
+def is_reasonably_opposite(n, normal_one):
+    return dot_v3v3(normalized(n), normalized(normal_one)) < 0.0
+
+```

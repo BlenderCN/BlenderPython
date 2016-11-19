@@ -76,6 +76,7 @@ def isect_line_plane(l1, l2, plane_co, plane_no):
         return False
 
 def obtain_normal3(p1, p2, p3):
+    # http://stackoverflow.com/a/8135330/1243487
     return [
         ((p2[1]-p1[1])*(p3[2]-p1[2]))-((p2[2]-p1[2])*(p3[1]-p1[1])),
         ((p2[2]-p1[2])*(p3[0]-p1[0]))-((p2[0]-p1[0])*(p3[2]-p1[2])),

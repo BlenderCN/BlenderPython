@@ -4,6 +4,7 @@ Introduction
 
 - [Preface](Preface)  
 - [General Python snippets](GeneralPythonSnippets)  
+- [Python Geometry snippets](PyGeom) 
 
 ______
 Objects / Mesh / BMesh  

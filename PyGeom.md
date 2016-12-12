@@ -5,13 +5,14 @@ This page is mostly a code dump and not arranged for convenient reading. sorry.
 matrix multiplication  , matrix in , vlist in
 ```python
 def multiply_vectors(M, vlist):
+    # (4*4 matrix)  X   (3*1 vector)
 
     for i, v in enumerate(vlist):
         # write _in place_
         vlist[i] = (
-            M[0][0]*v[0] + M[0][1]*v[1] + M[0][2]*v[2], 
-            M[1][0]*v[0] + M[1][1]*v[1] + M[1][2]*v[2], 
-            M[2][0]*v[0] + M[2][1]*v[1] + M[2][2]*v[2]
+            M[0][0]*v[0] + M[0][1]*v[1] + M[0][2]*v[2] + M[0][3]* 1.0,
+            M[1][0]*v[0] + M[1][1]*v[1] + M[1][2]*v[2] + M[1][3]* 1.0, 
+            M[2][0]*v[0] + M[2][1]*v[1] + M[2][2]*v[2] + M[2][3]* 1.0
         )
 
     return vlist

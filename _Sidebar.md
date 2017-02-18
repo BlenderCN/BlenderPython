@@ -37,7 +37,8 @@ Order / Organization
 - [Parenting](Parenting):lock:  
 - [Layers](Layers)  
 - [UI / Layout](Layout):lock:  
-  
+    - [Custom Icons](icons)
+
 Miscellaneous  
 
 - [Mathutils](mathutils):lock:  

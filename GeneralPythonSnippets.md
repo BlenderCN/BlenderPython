@@ -24,7 +24,7 @@ Follow along in Blender's Python console. Learning to type accurately is incredi
 (elaborate) : Open Blender, and get a Python console view open. You'll notice `>>>` , this is a prompt waiting for you to type stuff. What we'll be doing below is type stuff after the prompt, then hit Enter to run it.
 
 
-###print
+### print
 
 While you learn Python `print()` is your friend. It will try to display whatever is between the parenthesis `( )`.
 
@@ -35,7 +35,7 @@ While you learn Python `print()` is your friend. It will try to display whatever
 
 I'll return to `print()` frequently on this page to show how to display information that you will find helpful while coding.
 
-###integer
+### integer
 
 Whole numbers, positive or negative. You'll see plenty of these as you progress.
 ```python
@@ -44,14 +44,14 @@ Whole numbers, positive or negative. You'll see plenty of these as you progress.
 >>> print(hal * 3)
 ... 9000
 ```
-###float
+### float
 
 Numbers like these `100.0`, `0.0000003` and `34.4`. etc. You will often see unusual floats like `0.00200023423` when you expect to see just `0.002`, this is normal and will be explained later.  
 You might also see scientific notation for small numbers namely `2e-7` which is equivalent to `0.0000002`.
 
 A lot more can be said about _floats_ but it rarely makes sense to talk about them in isolation. You'll see more references to floats further down.
 
-###string
+### string
 
 The words you read right now are strings. In Python we express strings by wrapping them in single qoutes, double qoutes or tripple qoutes.
 ```python
@@ -78,7 +78,7 @@ to convert a non string to a string is done explicitly using `str()`:
 
 Further _string manipulation_ is discussed at a later stage. Strings are used a lot in Python, but in Blender they're commonly used to name objects, data, or set the properties of data.
 
-###tuple
+### tuple
 
 This is a data type which is used to collect data, it holds any kind of data you want. You'll see a tuple defined in various ways.
 
@@ -118,7 +118,7 @@ To change a tuple you must assign a new tuple by overwriting the tuple stored in
 ```
 If you find the need to update members of a collection you might want to use a `List` instead.
 
-###list
+### list
 
 Lists are a very big topic, but you don't need to know much about them to do useful things. Lists are like tuples but with a few important differences. Firstly notation, lists use square brackets `[ ]` to enclose their data. These are _not optional_ as they are with tuples.
 ```python
@@ -156,7 +156,7 @@ It's not uncommon to have nested lists, or Multi-Dimensional lists.
 
 unfinished.
 
-###Classes
+### Classes
 
 basic classes
 
@@ -205,4 +205,25 @@ the way Python works doesn't allow us to share the names of attributes and metho
 ```python
 some_class_instance.some_name  # <-- attr
 some_class_instance.some_name()  # <-- method
+```
+##### Making a class iterable
+
+sometimes you need to make a wrapper around some datatype, this lets you turn a class instance into something
+that you can iterate over.
+
+```python
+class Emo:
+
+    def __init__(self, data):
+        self.twoo = []
+        self.twoo.extend(data)
+
+    def __iter__(self):
+        return iter(self.twoo)
+
+
+ak = Emo([20, 30, 40])
+
+for g in ak:
+    print(g)
 ```

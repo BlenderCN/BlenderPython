@@ -10,7 +10,7 @@ Available Spline types: `('POLY', 'BEZIER', 'BSPLINE', 'CARDINAL', 'NURBS')`. Ea
   - CARDINAL: ...
   - BSPLINE: ...
 
-Sometimes the distinction between 2D and 3D is arbitrary, sometimes you can switch the Curve type to either, it depends on what logically makes sense.
+Sometimes the distinction between 2D and 3D is arbitrary, sometimes you can switch the Curve type to either, it depends on what you need.
 
 ### 2D (Polyline)
 

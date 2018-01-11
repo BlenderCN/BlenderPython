@@ -154,6 +154,30 @@ It's not uncommon to have nested lists, or Multi-Dimensional lists.
 >>> multi_dim_list = [[1.0, 0.1, 2.0], [0.2, 1.0, 0.3], [1.0, 0.3, 1.0]]
 ```
 
+**list mutations**
+
+```python
+test_list = [[],[]]
+
+def mutate_incoming(test_list, params):
+    a, b = params
+    list_a, list_b = test_list
+    list_a.append(a)
+    list_b.append(b)
+
+a_list = [20,30,40]
+b_list = ['huh', 'yes', 'ack']
+
+for params in zip(a_list, b_list):
+    mutate_incoming(test_list, params)
+
+list_a, list_b = test_list
+print(list_a, list_b)
+
+>> [20, 30, 40] ['huh', 'yes', 'ack']
+```
+In the above snippet we treat the `test_list` like a reference, each time `mutate_incoming` is called it appends new data to the nested list (` [[],[]] `) that the symbol `test_list` represents. This allows for concise zips, abstracting away the .append operation that would be otherwise needed.
+
 unfinished.
 
 ### Classes

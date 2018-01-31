@@ -251,3 +251,22 @@ ak = Emo([20, 30, 40])
 for g in ak:
     print(g)
 ```
+
+##### Standard Library
+
+This is a massive topic. but for now..
+
+**Iteration over paths.. the easy way**
+
+using pathlib.
+
+    ```python
+    from pathlib import Path
+
+    dataset_root = Path(r'C:\Users\zeffi\Desktop\GITHUB\sverchok\nodes')
+    analyzer_path = dataset_root / 'analyzer'
+
+    for node_path in analyzer_path.iterdir():
+        print(node_path)
+    ```
+

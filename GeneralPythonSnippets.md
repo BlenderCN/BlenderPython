@@ -258,7 +258,9 @@ This is a massive topic. but for now..
 
 ##### pathlib 
 
-**Iteration over paths.. the easy way**
+> Iteration over paths.. the easy way
+
+like this
 
     ```python
     from pathlib import Path

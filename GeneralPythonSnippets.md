@@ -252,13 +252,13 @@ for g in ak:
     print(g)
 ```
 
-##### Standard Library
+### Standard Library
 
 This is a massive topic. but for now..
 
-**Iteration over paths.. the easy way**
+##### pathlib 
 
-using pathlib.
+**Iteration over paths.. the easy way**
 
     ```python
     from pathlib import Path

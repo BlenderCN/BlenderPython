@@ -262,13 +262,13 @@ This is a massive topic. but for now..
 
 like this
 
-    ```python
-    from pathlib import Path
 
-    dataset_root = Path(r'C:\Users\zeffi\Desktop\GITHUB\sverchok\nodes')
-    analyzer_path = dataset_root / 'analyzer'
+```python
+from pathlib import Path
 
-    for node_path in analyzer_path.iterdir():
-        print(node_path)
-    ```
+dataset_root = Path(r'C:\Users\zeffi\Desktop\GITHUB\sverchok\nodes')
+analyzer_path = dataset_root / 'analyzer'
 
+for node_path in analyzer_path.iterdir():
+    print(node_path)
+```

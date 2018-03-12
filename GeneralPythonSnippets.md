@@ -275,7 +275,7 @@ for node_path in analyzer_path.iterdir():
 
 ##### Datetime
 
-I love this module. This examples finds all mondays in the given date range
+I love this module. This example finds all Mondays in the given date range
 ```python
 from datetime import datetime, date, timedelta
 

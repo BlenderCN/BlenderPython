@@ -272,3 +272,30 @@ analyzer_path = dataset_root / 'analyzer'
 for node_path in analyzer_path.iterdir():
     print(node_path)
 ```
+
+##### Datetime
+
+I love this module. This examples finds all mondays in the given date range
+```python
+from datetime import datetime, date, timedelta
+
+
+def find_mondays_between(start, end, date_format="%m/%d/%Y"):
+    a = datetime.strptime(start, date_format)
+    b = datetime.strptime(end, date_format)
+    delta = b - a
+    num_days = delta.days
+
+    mondays = []
+    for i in range(delta.days + 1):
+        day = a + timedelta(days=i)
+        if day.weekday() == 0:
+            day_str = day.strftime(date_format)
+            mondays.append(day_str)
+
+    return mondays
+        
+
+print(find_mondays_between("01/01/2018", "03/12/2018"))
+```
+

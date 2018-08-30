@@ -299,3 +299,19 @@ def find_mondays_between(start, end, date_format="%m/%d/%Y"):
 print(find_mondays_between("01/01/2018", "03/12/2018"))
 ```
 
+
+# Try Except
+
+what is Try/Except ? a good resource for deeper thought is here:
+Personally i tend to use some form of the following. It display the line number and the error. If that isn't enough then it's probably more complicated, and wouldn't likely be conveyed by the error anyway. That's when you switch on your brain again and reason about the line that triggers the error.
+
+```python
+import sys
+
+try:
+    ...
+except Exception as err:
+    print('-----', err, end=' | ')
+    print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno))
+```
+

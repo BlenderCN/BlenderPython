@@ -35,8 +35,8 @@ Miscellaneous  bpy.data.*
 Order/Organization
 
 - [Grouping]()
-- [Parenting]()
-- [Layers]()
+- [Parenting](https://github.com/BlenderCN/BlenderPython/blob/master/Parenting.md)
+- [Layers](https://github.com/BlenderCN/BlenderPython/blob/master/Layers.md)
 - [UI/Layout]()
     - [Custom Icons]()
     
@@ -44,15 +44,15 @@ Miscellaneous
 
 - [Mathutils]()
 - [Modifiers]()
-- [Particle Systems]()
-- [vertex colors]()
+- [Particle Systems](https://github.com/BlenderCN/BlenderPython/blob/master/Particle-Systems.md)
+- [vertex colors](https://github.com/BlenderCN/BlenderPython/blob/master/Vertex-Colors.md)
 - [Textures UV DPI]()
-- [Properties]()
+- [Properties](https://github.com/BlenderCN/BlenderPython/blob/master/Properties.md)
 - [Operators(and callbacks)]()
-- [bgl/blf]()
-- [Grease Pencil]()
+- [bgl/blf](https://github.com/BlenderCN/BlenderPython/blob/master/bgl_blf.md)
+- [Grease Pencil](https://github.com/BlenderCN/BlenderPython/blob/master/GreasePencil.md)
 - [Themes]()
-- [Areas]()
+- [Areas](https://github.com/BlenderCN/BlenderPython/blob/master/Areas.md)
 
 Add-ons
 

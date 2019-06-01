@@ -6,4 +6,5 @@
 |bpy.context.object.users_group|bpy.context.object.users_collection|
 |bpy.context.scene.objects.active|bpy.context.view_layer.objects.active|
 |bpy.context.object.select=True|bpy.context.object.select_set(True)|
+|bpy.context.scene.objects.link|bpy.context.scene.collection.objects.link|
 

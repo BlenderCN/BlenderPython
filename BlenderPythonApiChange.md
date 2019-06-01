@@ -4,4 +4,5 @@
 |bpy.types.INFO_MT_add|bpy.types.VIEW3D_MT_mesh_add|
 |bpy.context.object.data.uv_textures|bpy.context.object.data.uv_layers|
 |bpy.context.object.users_group|bpy.context.object.users_collection|
+|bpy.context.scene.objects.active|bpy.context.view_layer.objects.active|
 

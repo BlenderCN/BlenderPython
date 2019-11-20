@@ -50,7 +50,7 @@ for i in range(0,60):
 
 	bpy.ops.transform.resize(value=(0.1,0.1,0.5))                  #resize it
 
-	bpy.context.scene.cursor_location = 0,0,0                      #Set cursor to origin of scene
+	bpy.context.scene.cursor.location = 0,0,0                      #Set cursor to origin of scene
 	bpy.ops.object.origin_set(type='ORIGIN_CURSOR')                #Set objects origin to cursor
 
 	bpy.context.active_object.rotation_euler = 0.104720*i,0,0      #rotate object with radians (6 degrees)
